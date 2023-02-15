@@ -1,0 +1,149 @@
+[
+  {
+    "application": {
+      "filter": ""
+    },
+    "datasource": {
+      "type": "alexanderzobnin-zabbix-datasource",
+      "uid": "gHQN77VVz"
+    },
+    "functions": [],
+    "group": {
+      "filter": "CBTA"
+    },
+    "hide": false,
+    "host": {
+      "filter": "10.0.90.30 ahz-dns1.telkomsel.co.id"
+    },
+    "item": {
+      "filter": "Temperature"
+    },
+    "itemTag": {
+      "filter": "component: temperature"
+    },
+    "options": {
+      "disableDataAlignment": false,
+      "showDisabledItems": false,
+      "skipEmptyValues": false,
+      "useZabbixValueMapping": false
+    },
+    "proxy": {
+      "filter": ""
+    },
+    "queryType": "0",
+    "refId": "handle_bug",
+    "resultFormat": "time_series",
+    "table": {
+      "skipEmptyValues": false
+    },
+    "tags": {
+      "filter": ""
+    },
+    "trigger": {
+      "filter": ""
+    },
+    "triggers": {
+      "acknowledged": 2,
+      "count": true,
+      "minSeverity": 3
+    }
+  },
+  {
+    "application": {
+      "filter": ""
+    },
+    "datasource": {
+      "type": "alexanderzobnin-zabbix-datasource",
+      "uid": "gHQN77VVz"
+    },
+    "functions": [],
+    "group": {
+      "filter": "Puma/Cisco"
+    },
+    "hide": false,
+    "host": {
+      "filter": "114.120.211.216 sr-sorong.1-new"
+    },
+    "item": {
+      "filter": "/.*speed|.*Percentage out/"
+    },
+    "itemTag": {
+      "filter": "/interface.*(Bundle-Ether1|Bundle-Ether5)$/"
+    },
+    "options": {
+      "disableDataAlignment": false,
+      "showDisabledItems": false,
+      "skipEmptyValues": false,
+      "useZabbixValueMapping": false
+    },
+    "proxy": {
+      "filter": ""
+    },
+    "queryType": "0",
+    "refId": "114.120.211.216 sr-sorong.1-new",
+    "resultFormat": "time_series",
+    "table": {
+      "skipEmptyValues": false
+    },
+    "tags": {
+      "filter": ""
+    },
+    "trigger": {
+      "filter": ""
+    },
+    "triggers": {
+      "acknowledged": 2,
+      "count": true,
+      "minSeverity": 3
+    }
+  },
+  {
+    "application": {
+      "filter": ""
+    },
+    "datasource": {
+      "type": "alexanderzobnin-zabbix-datasource",
+      "uid": "gHQN77VVz"
+    },
+    "functions": [],
+    "group": {
+      "filter": "Puma/Cisco"
+    },
+    "hide": false,
+    "host": {
+      "filter": "114.120.211.227 sr-sorong.2-new"
+    },
+    "item": {
+      "filter": "/.*speed|.*Percentage out/"
+    },
+    "itemTag": {
+      "filter": "/interface.*(Bundle-Ether1|Bundle-Ether5)$/"
+    },
+    "options": {
+      "disableDataAlignment": false,
+      "showDisabledItems": false,
+      "skipEmptyValues": false,
+      "useZabbixValueMapping": false
+    },
+    "proxy": {
+      "filter": ""
+    },
+    "queryType": "0",
+    "refId": "114.120.211.227 sr-sorong.2-new",
+    "resultFormat": "time_series",
+    "table": {
+      "skipEmptyValues": false
+    },
+    "tags": {
+      "filter": ""
+    },
+    "trigger": {
+      "filter": ""
+    },
+    "triggers": {
+      "acknowledged": 2,
+      "count": true,
+      "minSeverity": 3
+    }
+  }
+]

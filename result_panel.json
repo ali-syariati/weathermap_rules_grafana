@@ -129,6 +129,18 @@
                     "hidden": false,
                     "pattern": "WufIG9lqQWVk5ltwFjjU-408",
                     "style": "fillColor"
+                  },
+                  {
+                    "colorOn": "a",
+                    "hidden": false,
+                    "pattern": "9cHFc5Lmw2Qs3Sorvx_S-52",
+                    "style": "fillColor"
+                  },
+                  {
+                    "colorOn": "a",
+                    "hidden": false,
+                    "pattern": "9cHFc5Lmw2Qs3Sorvx_S-57",
+                    "style": "fillColor"
                   }
                 ],
                 "options": {
@@ -237,6 +249,566 @@
           },
           {
             "aggregation": "current",
+            "alias": "sr-sorong.2-new: Bundle-Ether5 Percent",
+            "column": "Time",
+            "dateColumn": "Time",
+            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+            "dateTHData": [
+              {
+                "color": "rgba(245, 54, 54, 0.9)",
+                "comparator": "ge",
+                "level": 0,
+                "value": "0d"
+              },
+              {
+                "color": "rgba(237, 129, 40, 0.89)",
+                "comparator": "ge",
+                "level": 0,
+                "value": "-1d"
+              },
+              {
+                "color": "rgba(50, 172, 45, 0.97)",
+                "comparator": "ge",
+                "level": 0,
+                "value": "-1w"
+              }
+            ],
+            "decimals": 2,
+            "globalThreshold": false,
+            "gradient": false,
+            "hidden": false,
+            "invert": false,
+            "mappingType": 1,
+            "mapsDat": {
+              "events": {
+                "dataList": [],
+                "options": {
+                  "enableRegEx": true,
+                  "identByProp": "id",
+                  "metadata": ""
+                }
+              },
+              "links": {
+                "dataList": [
+                  {
+                    "hidden": false,
+                    "linkOn": "a",
+                    "linkParams": false,
+                    "linkUrl": "https://10.54.68.73/d/GqiSMDA4k/ran-pag-gplyen-1-lan_ran_ran-pag-gplyen-1_ran-pag-gplyen-2_po1_po1_2_fots_collo_direct_tsel_po1_l3-po1?orgId=1",
+                    "pattern": "21"
+                  },
+                  {
+                    "hidden": false,
+                    "linkOn": "a",
+                    "linkParams": false,
+                    "linkUrl": "https://10.54.68.73/d/GqiSMDA4k/ran-pag-gplyen-1-lan_ran_ran-pag-gplyen-1_ran-pag-gplyen-2_po1_po1_2_fots_collo_direct_tsel_po1_l3-po1?orgId=1",
+                    "pattern": "9cHFc5Lmw2Qs3Sorvx_S-52"
+                  }
+                ],
+                "options": {
+                  "enableRegEx": true,
+                  "identByProp": "id",
+                  "metadata": ""
+                }
+              },
+              "shapes": {
+                "dataList": [
+                  {
+                    "colorOn": "a",
+                    "hidden": false,
+                    "pattern": "9cHFc5Lmw2Qs3Sorvx_S-52",
+                    "style": "fillColor"
+                  },
+                  {
+                    "colorOn": "n",
+                    "hidden": false,
+                    "pattern": "21",
+                    "style": "fillColor"
+                  }
+                ],
+                "options": {
+                  "enableRegEx": true,
+                  "identByProp": "id",
+                  "metadata": ""
+                }
+              },
+              "texts": {
+                "dataList": [
+                  {
+                    "hidden": false,
+                    "pattern": "21",
+                    "textOn": "wmd",
+                    "textPattern": "/received/",
+                    "textReplace": "pattern"
+                  }
+                ],
+                "options": {
+                  "enableRegEx": true,
+                  "identByProp": "id",
+                  "metadata": ""
+                }
+              }
+            },
+            "metricType": "serie",
+            "newRule": false,
+            "numberTHData": [
+              {
+                "color": "#00000000",
+                "comparator": "ge",
+                "level": 0
+              }
+            ],
+            "order": 2,
+            "overlayIcon": false,
+            "pattern": "114.120.211.227 sr-sorong.2-new: Cisco ASAv: Bundle-Ether5 Percentage out",
+            "rangeData": [],
+            "reduce": true,
+            "refId": "A",
+            "sanitize": false,
+            "stringTHData": [
+              {
+                "color": "rgba(245, 54, 54, 0.9)",
+                "comparator": "eq",
+                "level": 0,
+                "value": "/.*/"
+              },
+              {
+                "color": "rgba(237, 129, 40, 0.89)",
+                "comparator": "eq",
+                "level": 0,
+                "value": "/.*warning.*/"
+              },
+              {
+                "color": "rgba(50, 172, 45, 0.97)",
+                "comparator": "eq",
+                "level": 0,
+                "value": "/.*(success|ok).*/"
+              }
+            ],
+            "tooltip": true,
+            "tooltipColors": false,
+            "tooltipIframe": "<iframe src=\"https://10.54.68.73/d-solo/GqiSMDA4k/ran-pag-gplyen-1-lan_ran_ran-pag-gplyen-1_ran-pag-gplyen-2_po1_po1_2_fots_collo_direct_tsel_po1_l3-po1?orgId=1&panelId=2\" width=\"600\" height=\"400\" frameborder=\"0\"></iframe>",
+            "tooltipLabel": "",
+            "tooltipOn": "a",
+            "tooltipOnlyIframe": true,
+            "tpDirection": "v",
+            "tpGraph": false,
+            "tpGraphScale": "linear",
+            "tpGraphSize": "100%",
+            "tpGraphType": "line",
+            "tpMetadata": false,
+            "type": "number",
+            "unit": "percent",
+            "valueData": []
+          },
+          {
+            "aggregation": "current",
+            "alias": "sr-sorong.2-new: Bundle-Ether5 Speed",
+            "column": "Time",
+            "dateColumn": "Time",
+            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+            "dateTHData": [
+              {
+                "color": "rgba(245, 54, 54, 0.9)",
+                "comparator": "ge",
+                "level": 0,
+                "value": "0d"
+              },
+              {
+                "color": "rgba(237, 129, 40, 0.89)",
+                "comparator": "ge",
+                "level": 0,
+                "value": "-1d"
+              },
+              {
+                "color": "rgba(50, 172, 45, 0.97)",
+                "comparator": "ge",
+                "level": 0,
+                "value": "-1w"
+              }
+            ],
+            "decimals": 2,
+            "globalThreshold": false,
+            "gradient": false,
+            "hidden": false,
+            "invert": false,
+            "mappingType": 1,
+            "mapsDat": {
+              "events": {
+                "dataList": [],
+                "options": {
+                  "enableRegEx": true,
+                  "identByProp": "id",
+                  "metadata": ""
+                }
+              },
+              "links": {
+                "dataList": [],
+                "options": {
+                  "enableRegEx": true,
+                  "identByProp": "id",
+                  "metadata": ""
+                }
+              },
+              "shapes": {
+                "dataList": [],
+                "options": {
+                  "enableRegEx": true,
+                  "identByProp": "id",
+                  "metadata": ""
+                }
+              },
+              "texts": {
+                "dataList": [
+                  {
+                    "hidden": false,
+                    "pattern": "21",
+                    "textOn": "wmd",
+                    "textPattern": "/speed/",
+                    "textReplace": "pattern"
+                  }
+                ],
+                "options": {
+                  "enableRegEx": true,
+                  "identByProp": "id",
+                  "metadata": ""
+                }
+              }
+            },
+            "metricType": "serie",
+            "newRule": false,
+            "numberTHData": [
+              {
+                "color": "rgba(245, 54, 54, 0.9)",
+                "comparator": "ge",
+                "level": 0
+              }
+            ],
+            "order": 3,
+            "overlayIcon": false,
+            "pattern": "114.120.211.227 sr-sorong.2-new: Cisco ASAv: Bundle-Ether5 Link speed",
+            "rangeData": [],
+            "reduce": true,
+            "refId": "A",
+            "sanitize": false,
+            "stringTHData": [
+              {
+                "color": "rgba(245, 54, 54, 0.9)",
+                "comparator": "eq",
+                "level": 0,
+                "value": "/.*/"
+              },
+              {
+                "color": "rgba(237, 129, 40, 0.89)",
+                "comparator": "eq",
+                "level": 0,
+                "value": "/.*warning.*/"
+              },
+              {
+                "color": "rgba(50, 172, 45, 0.97)",
+                "comparator": "eq",
+                "level": 0,
+                "value": "/.*(success|ok).*/"
+              }
+            ],
+            "tooltip": false,
+            "tooltipColors": false,
+            "tooltipIframe": "",
+            "tooltipLabel": "",
+            "tooltipOn": "a",
+            "tooltipOnlyIframe": false,
+            "tpDirection": "v",
+            "tpGraph": false,
+            "tpGraphScale": "linear",
+            "tpGraphSize": "100%",
+            "tpGraphType": "line",
+            "tpMetadata": false,
+            "type": "number",
+            "unit": "decbytes",
+            "valueData": []
+          },
+          {
+            "aggregation": "current",
+            "alias": "sr-sorong.1-new: Bundle-Ether5 Percent",
+            "column": "Time",
+            "dateColumn": "Time",
+            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+            "dateTHData": [
+              {
+                "color": "rgba(245, 54, 54, 0.9)",
+                "comparator": "ge",
+                "level": 0,
+                "value": "0d"
+              },
+              {
+                "color": "rgba(237, 129, 40, 0.89)",
+                "comparator": "ge",
+                "level": 0,
+                "value": "-1d"
+              },
+              {
+                "color": "rgba(50, 172, 45, 0.97)",
+                "comparator": "ge",
+                "level": 0,
+                "value": "-1w"
+              }
+            ],
+            "decimals": 2,
+            "globalThreshold": false,
+            "gradient": false,
+            "hidden": false,
+            "invert": false,
+            "mappingType": 1,
+            "mapsDat": {
+              "events": {
+                "dataList": [],
+                "options": {
+                  "enableRegEx": true,
+                  "identByProp": "id",
+                  "metadata": ""
+                }
+              },
+              "links": {
+                "dataList": [
+                  {
+                    "hidden": false,
+                    "linkOn": "a",
+                    "linkParams": false,
+                    "linkUrl": "https://10.54.68.73/d/GqiSMDA4k/ran-pag-gplyen-1-lan_ran_ran-pag-gplyen-1_ran-pag-gplyen-2_po1_po1_2_fots_collo_direct_tsel_po1_l3-po1?orgId=1",
+                    "pattern": "22"
+                  },
+                  {
+                    "hidden": false,
+                    "linkOn": "a",
+                    "linkParams": false,
+                    "linkUrl": "https://10.54.68.73/d/GqiSMDA4k/ran-pag-gplyen-1-lan_ran_ran-pag-gplyen-1_ran-pag-gplyen-2_po1_po1_2_fots_collo_direct_tsel_po1_l3-po1?orgId=1",
+                    "pattern": "9cHFc5Lmw2Qs3Sorvx_S-57"
+                  }
+                ],
+                "options": {
+                  "enableRegEx": true,
+                  "identByProp": "id",
+                  "metadata": ""
+                }
+              },
+              "shapes": {
+                "dataList": [
+                  {
+                    "colorOn": "a",
+                    "hidden": false,
+                    "pattern": "9cHFc5Lmw2Qs3Sorvx_S-57",
+                    "style": "fillColor"
+                  },
+                  {
+                    "colorOn": "n",
+                    "hidden": false,
+                    "pattern": "22",
+                    "style": "fillColor"
+                  }
+                ],
+                "options": {
+                  "enableRegEx": true,
+                  "identByProp": "id",
+                  "metadata": ""
+                }
+              },
+              "texts": {
+                "dataList": [
+                  {
+                    "hidden": false,
+                    "pattern": "22",
+                    "textOn": "wmd",
+                    "textPattern": "/received/",
+                    "textReplace": "pattern"
+                  }
+                ],
+                "options": {
+                  "enableRegEx": true,
+                  "identByProp": "id",
+                  "metadata": ""
+                }
+              }
+            },
+            "metricType": "serie",
+            "newRule": false,
+            "numberTHData": [
+              {
+                "color": "#00000000",
+                "comparator": "ge",
+                "level": 0
+              }
+            ],
+            "order": 4,
+            "overlayIcon": false,
+            "pattern": "114.120.211.216 sr-sorong.1-new: Cisco ASAv: Bundle-Ether5 Percentage out",
+            "rangeData": [],
+            "reduce": true,
+            "refId": "A",
+            "sanitize": false,
+            "stringTHData": [
+              {
+                "color": "rgba(245, 54, 54, 0.9)",
+                "comparator": "eq",
+                "level": 0,
+                "value": "/.*/"
+              },
+              {
+                "color": "rgba(237, 129, 40, 0.89)",
+                "comparator": "eq",
+                "level": 0,
+                "value": "/.*warning.*/"
+              },
+              {
+                "color": "rgba(50, 172, 45, 0.97)",
+                "comparator": "eq",
+                "level": 0,
+                "value": "/.*(success|ok).*/"
+              }
+            ],
+            "tooltip": true,
+            "tooltipColors": false,
+            "tooltipIframe": "<iframe src=\"https://10.54.68.73/d-solo/GqiSMDA4k/ran-pag-gplyen-1-lan_ran_ran-pag-gplyen-1_ran-pag-gplyen-2_po1_po1_2_fots_collo_direct_tsel_po1_l3-po1?orgId=1&panelId=2\" width=\"600\" height=\"400\" frameborder=\"0\"></iframe>",
+            "tooltipLabel": "",
+            "tooltipOn": "a",
+            "tooltipOnlyIframe": true,
+            "tpDirection": "v",
+            "tpGraph": false,
+            "tpGraphScale": "linear",
+            "tpGraphSize": "100%",
+            "tpGraphType": "line",
+            "tpMetadata": false,
+            "type": "number",
+            "unit": "percent",
+            "valueData": []
+          },
+          {
+            "aggregation": "current",
+            "alias": "sr-sorong.1-new: Bundle-Ether5 Speed",
+            "column": "Time",
+            "dateColumn": "Time",
+            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+            "dateTHData": [
+              {
+                "color": "rgba(245, 54, 54, 0.9)",
+                "comparator": "ge",
+                "level": 0,
+                "value": "0d"
+              },
+              {
+                "color": "rgba(237, 129, 40, 0.89)",
+                "comparator": "ge",
+                "level": 0,
+                "value": "-1d"
+              },
+              {
+                "color": "rgba(50, 172, 45, 0.97)",
+                "comparator": "ge",
+                "level": 0,
+                "value": "-1w"
+              }
+            ],
+            "decimals": 2,
+            "globalThreshold": false,
+            "gradient": false,
+            "hidden": false,
+            "invert": false,
+            "mappingType": 1,
+            "mapsDat": {
+              "events": {
+                "dataList": [],
+                "options": {
+                  "enableRegEx": true,
+                  "identByProp": "id",
+                  "metadata": ""
+                }
+              },
+              "links": {
+                "dataList": [],
+                "options": {
+                  "enableRegEx": true,
+                  "identByProp": "id",
+                  "metadata": ""
+                }
+              },
+              "shapes": {
+                "dataList": [],
+                "options": {
+                  "enableRegEx": true,
+                  "identByProp": "id",
+                  "metadata": ""
+                }
+              },
+              "texts": {
+                "dataList": [
+                  {
+                    "hidden": false,
+                    "pattern": "22",
+                    "textOn": "wmd",
+                    "textPattern": "/speed/",
+                    "textReplace": "pattern"
+                  }
+                ],
+                "options": {
+                  "enableRegEx": true,
+                  "identByProp": "id",
+                  "metadata": ""
+                }
+              }
+            },
+            "metricType": "serie",
+            "newRule": false,
+            "numberTHData": [
+              {
+                "color": "rgba(245, 54, 54, 0.9)",
+                "comparator": "ge",
+                "level": 0
+              }
+            ],
+            "order": 5,
+            "overlayIcon": false,
+            "pattern": "114.120.211.216 sr-sorong.1-new: Cisco ASAv: Bundle-Ether5 Link speed",
+            "rangeData": [],
+            "reduce": true,
+            "refId": "A",
+            "sanitize": false,
+            "stringTHData": [
+              {
+                "color": "rgba(245, 54, 54, 0.9)",
+                "comparator": "eq",
+                "level": 0,
+                "value": "/.*/"
+              },
+              {
+                "color": "rgba(237, 129, 40, 0.89)",
+                "comparator": "eq",
+                "level": 0,
+                "value": "/.*warning.*/"
+              },
+              {
+                "color": "rgba(50, 172, 45, 0.97)",
+                "comparator": "eq",
+                "level": 0,
+                "value": "/.*(success|ok).*/"
+              }
+            ],
+            "tooltip": false,
+            "tooltipColors": false,
+            "tooltipIframe": "",
+            "tooltipLabel": "",
+            "tooltipOn": "a",
+            "tooltipOnlyIframe": false,
+            "tpDirection": "v",
+            "tpGraph": false,
+            "tpGraphScale": "linear",
+            "tpGraphSize": "100%",
+            "tpGraphType": "line",
+            "tpMetadata": false,
+            "type": "number",
+            "unit": "decbytes",
+            "valueData": []
+          },
+          {
+            "aggregation": "current",
             "alias": "sr-sorong.2-new: Bundle-Ether1 Speed",
             "column": "Time",
             "dateColumn": "Time",
@@ -318,7 +890,7 @@
                 "level": 0
               }
             ],
-            "order": 2,
+            "order": 6,
             "overlayIcon": false,
             "pattern": "114.120.211.227 sr-sorong.2-new: Cisco ASAv: Bundle-Ether1 Link speed",
             "rangeData": [],
@@ -466,7 +1038,7 @@
                 "level": 0
               }
             ],
-            "order": 3,
+            "order": 7,
             "overlayIcon": false,
             "pattern": "114.120.211.227 sr-sorong.2-new: Cisco ASAv: Bundle-Ether1 Percentage out",
             "rangeData": [],
@@ -592,7 +1164,7 @@
                 "level": 0
               }
             ],
-            "order": 4,
+            "order": 8,
             "overlayIcon": false,
             "pattern": "114.120.211.216 sr-sorong.1-new: Cisco ASAv: Bundle-Ether1 Link speed",
             "rangeData": [],
@@ -740,7 +1312,7 @@
                 "level": 0
               }
             ],
-            "order": 5,
+            "order": 9,
             "overlayIcon": false,
             "pattern": "114.120.211.216 sr-sorong.1-new: Cisco ASAv: Bundle-Ether1 Percentage out",
             "rangeData": [],
@@ -866,7 +1438,7 @@
                 "level": 0
               }
             ],
-            "order": 6,
+            "order": 10,
             "overlayIcon": false,
             "pattern": "/.*/",
             "rangeData": [],
@@ -992,7 +1564,7 @@
                 "level": 0
               }
             ],
-            "order": 7,
+            "order": 11,
             "overlayIcon": false,
             "pattern": "updated",
             "rangeData": [],
@@ -1130,7 +1702,7 @@
                 "value": 80
               }
             ],
-            "order": 8,
+            "order": 12,
             "overlayIcon": false,
             "pattern": "name",
             "rangeData": [],
@@ -1233,7 +1805,7 @@
             "filter": "/.*speed|.*Percentage out/"
           },
           "itemTag": {
-            "filter": "/interface.*(Bundle-Ether1)$/"
+            "filter": "/interface.*(Bundle-Ether1|Bundle-Ether5)$/"
           },
           "options": {
             "disableDataAlignment": false,
@@ -1282,7 +1854,7 @@
             "filter": "/.*speed|.*Percentage out/"
           },
           "itemTag": {
-            "filter": "/interface.*(Bundle-Ether1)$/"
+            "filter": "/interface.*(Bundle-Ether1|Bundle-Ether5)$/"
           },
           "options": {
             "disableDataAlignment": false,
@@ -1374,6 +1946,153 @@
               "type": "macro"
             }
           ]
+        },
+        {
+          "application": {
+            "filter": ""
+          },
+          "datasource": {
+            "type": "alexanderzobnin-zabbix-datasource",
+            "uid": "gHQN77VVz"
+          },
+          "functions": [],
+          "group": {
+            "filter": "CBTA"
+          },
+          "hide": false,
+          "host": {
+            "filter": "10.0.90.30 ahz-dns1.telkomsel.co.id"
+          },
+          "item": {
+            "filter": "Temperature"
+          },
+          "itemTag": {
+            "filter": "component: temperature"
+          },
+          "options": {
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "handle_bug",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "trigger": {
+            "filter": ""
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        },
+        {
+          "application": {
+            "filter": ""
+          },
+          "datasource": {
+            "type": "alexanderzobnin-zabbix-datasource",
+            "uid": "gHQN77VVz"
+          },
+          "functions": [],
+          "group": {
+            "filter": "Puma/Cisco"
+          },
+          "hide": false,
+          "host": {
+            "filter": "114.120.211.216 sr-sorong.1-new"
+          },
+          "item": {
+            "filter": "/.*speed|.*Percentage out/"
+          },
+          "itemTag": {
+            "filter": "/interface.*(Bundle-Ether1|Bundle-Ether5)$/"
+          },
+          "options": {
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "114.120.211.216 sr-sorong.1-new",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "trigger": {
+            "filter": ""
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        },
+        {
+          "application": {
+            "filter": ""
+          },
+          "datasource": {
+            "type": "alexanderzobnin-zabbix-datasource",
+            "uid": "gHQN77VVz"
+          },
+          "functions": [],
+          "group": {
+            "filter": "Puma/Cisco"
+          },
+          "hide": false,
+          "host": {
+            "filter": "114.120.211.227 sr-sorong.2-new"
+          },
+          "item": {
+            "filter": "/.*speed|.*Percentage out/"
+          },
+          "itemTag": {
+            "filter": "/interface.*(Bundle-Ether1|Bundle-Ether5)$/"
+          },
+          "options": {
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "114.120.211.227 sr-sorong.2-new",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "trigger": {
+            "filter": ""
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
         }
       ],
       "title": "test generate",

@@ -1,0 +1,26 @@
+{
+  "dashboard_name" : "test generate",
+  "lates_data_info": {
+    "regex_pattern" : "/.*/",
+    "rules": {
+      "regex_pattern" : "/dateinfo/",
+      "id_label" : "73"
+    }
+  },
+  "lates_edit_name": {
+    "regex_pattern" : "name",
+    "rules":
+    {
+      "regex_pattern" : "/name/",
+      "id_label" : "70"
+    }
+  },
+  "lates_edit_info": {
+    "regex_pattern" : "updated",
+    "rules":
+    {
+      "regex_pattern" : "/dateinfo/",
+      "id_label" : "70"
+    }
+  }
+}
