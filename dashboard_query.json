@@ -3,10 +3,10 @@
   "datasource_uid_1": "gHQN77VVz",
   "datasource_uid_2": "4YsZQV44z",
   "timezone": "Asia/Jakarta",
-  "title": "ran-agg-gombel.3 - lan_core_ran-agg-gombel.3_r4.gbl.pe-mobile.1_be10_be10_500_fots_collo_direct_tsel_be10_l3 - Bundle-Ether10",
+  "title": "ran-agg-sukoharjo.3 - lan_core_ran-agg-sukoharjo.3_r4.skh.pe-mobile.1_be20_be20_fots_collo_direct_tsel_be20_l3 - Bundle-Ether20",
   "group_filter": "Jateng/Cisco",
-  "host_filter": "172.16.145.7 cps-gombel-1",
-  "item_filter_outbound": "Cisco ASAv: port-channel30 Outgoing traffic",
-  "item_filter_inbound": "Cisco ASAv: port-channel30 Incoming traffic",
-  "item_tag_filter": "description: lan_cps-gombel-1_r4.gbl.pe-mobile.1_cps_20g_po30_be30"
+  "host_filter": "221.132.196.57 ran-agg-sukoharjo.3",
+  "item_filter_outbound": "Cisco ASAv: Bundle-Ether20 Outgoing traffic",
+  "item_filter_inbound": "Cisco ASAv: Bundle-Ether20 Incoming traffic",
+  "item_tag_filter": "description: lan_core_ran-agg-sukoharjo.3_r4.skh.pe-mobile.1_be20_be20_fots_collo_direct_tsel_be20_l3"
 }
