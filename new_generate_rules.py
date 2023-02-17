@@ -20,8 +20,8 @@ from pprint import pprint
 class Generate_Rules_Grafana(object):
     def __init__(self):
         # True: there already have global colour, False: there not have any rules
-        self.update_only = True
-        self.put_on_top = True
+        self.update_only = False
+        self.put_on_top = False
         self.update_xml = False
 
         # query init

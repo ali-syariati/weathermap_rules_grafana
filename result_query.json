@@ -1,4 +1,3 @@
-[
   {
     "application": {
       "filter": ""
@@ -58,17 +57,17 @@
     },
     "functions": [],
     "group": {
-      "filter": "Puma/Cisco"
+      "filter": "Jateng/Cisco"
     },
     "hide": false,
     "host": {
-      "filter": "114.120.211.216 sr-sorong.1-new"
+      "filter": "172.30.2.54 cps-sukoharjo-2"
     },
     "item": {
       "filter": "/.*speed|.*Percentage out/"
     },
     "itemTag": {
-      "filter": "/interface.*(Bundle-Ether1|Bundle-Ether5)$/"
+      "filter": "/description.*(po1_po1).*/"
     },
     "options": {
       "disableDataAlignment": false,
@@ -80,7 +79,7 @@
       "filter": ""
     },
     "queryType": "0",
-    "refId": "114.120.211.216 sr-sorong.1-new",
+    "refId": "172.30.2.54 cps-sukoharjo-2",
     "resultFormat": "time_series",
     "table": {
       "skipEmptyValues": false
@@ -107,17 +106,17 @@
     },
     "functions": [],
     "group": {
-      "filter": "Puma/Cisco"
+      "filter": "Jateng/Cisco"
     },
     "hide": false,
     "host": {
-      "filter": "114.120.211.227 sr-sorong.2-new"
+      "filter": "221.132.196.58 ran-agg-sukoharjo.4"
     },
     "item": {
       "filter": "/.*speed|.*Percentage out/"
     },
     "itemTag": {
-      "filter": "/interface.*(Bundle-Ether1|Bundle-Ether5)$/"
+      "filter": "/description.*(be1_be1|te0/0/0/7_te0/6/0/3|te0/7/0/5_te0/6/0/6).*/"
     },
     "options": {
       "disableDataAlignment": false,
@@ -129,7 +128,497 @@
       "filter": ""
     },
     "queryType": "0",
-    "refId": "114.120.211.227 sr-sorong.2-new",
+    "refId": "221.132.196.58 ran-agg-sukoharjo.4",
+    "resultFormat": "time_series",
+    "table": {
+      "skipEmptyValues": false
+    },
+    "tags": {
+      "filter": ""
+    },
+    "trigger": {
+      "filter": ""
+    },
+    "triggers": {
+      "acknowledged": 2,
+      "count": true,
+      "minSeverity": 3
+    }
+  },
+  {
+    "application": {
+      "filter": ""
+    },
+    "datasource": {
+      "type": "alexanderzobnin-zabbix-datasource",
+      "uid": "gHQN77VVz"
+    },
+    "functions": [],
+    "group": {
+      "filter": "Jateng/Cisco"
+    },
+    "hide": false,
+    "host": {
+      "filter": "172.30.2.53 cps-sukoharjo-1"
+    },
+    "item": {
+      "filter": "/.*speed|.*Percentage out/"
+    },
+    "itemTag": {
+      "filter": "/description.*(po1_po1).*/"
+    },
+    "options": {
+      "disableDataAlignment": false,
+      "showDisabledItems": false,
+      "skipEmptyValues": false,
+      "useZabbixValueMapping": false
+    },
+    "proxy": {
+      "filter": ""
+    },
+    "queryType": "0",
+    "refId": "172.30.2.53 cps-sukoharjo-1",
+    "resultFormat": "time_series",
+    "table": {
+      "skipEmptyValues": false
+    },
+    "tags": {
+      "filter": ""
+    },
+    "trigger": {
+      "filter": ""
+    },
+    "triggers": {
+      "acknowledged": 2,
+      "count": true,
+      "minSeverity": 3
+    }
+  },
+  {
+    "application": {
+      "filter": ""
+    },
+    "datasource": {
+      "type": "alexanderzobnin-zabbix-datasource",
+      "uid": "gHQN77VVz"
+    },
+    "functions": [],
+    "group": {
+      "filter": "Jateng/Cisco"
+    },
+    "hide": false,
+    "host": {
+      "filter": "172.16.145.8 cps-gombel-2"
+    },
+    "item": {
+      "filter": "/.*speed|.*Percentage out/"
+    },
+    "itemTag": {
+      "filter": "/description.*(po1_po1).*/"
+    },
+    "options": {
+      "disableDataAlignment": false,
+      "showDisabledItems": false,
+      "skipEmptyValues": false,
+      "useZabbixValueMapping": false
+    },
+    "proxy": {
+      "filter": ""
+    },
+    "queryType": "0",
+    "refId": "172.16.145.8 cps-gombel-2",
+    "resultFormat": "time_series",
+    "table": {
+      "skipEmptyValues": false
+    },
+    "tags": {
+      "filter": ""
+    },
+    "trigger": {
+      "filter": ""
+    },
+    "triggers": {
+      "acknowledged": 2,
+      "count": true,
+      "minSeverity": 3
+    }
+  },
+  {
+    "application": {
+      "filter": ""
+    },
+    "datasource": {
+      "type": "alexanderzobnin-zabbix-datasource",
+      "uid": "gHQN77VVz"
+    },
+    "functions": [],
+    "group": {
+      "filter": "Jateng/Cisco"
+    },
+    "hide": false,
+    "host": {
+      "filter": "172.16.145.7 cps-gombel-1"
+    },
+    "item": {
+      "filter": "/.*speed|.*Percentage out/"
+    },
+    "itemTag": {
+      "filter": "/description.*(po1_po1).*/"
+    },
+    "options": {
+      "disableDataAlignment": false,
+      "showDisabledItems": false,
+      "skipEmptyValues": false,
+      "useZabbixValueMapping": false
+    },
+    "proxy": {
+      "filter": ""
+    },
+    "queryType": "0",
+    "refId": "172.16.145.7 cps-gombel-1",
+    "resultFormat": "time_series",
+    "table": {
+      "skipEmptyValues": false
+    },
+    "tags": {
+      "filter": ""
+    },
+    "trigger": {
+      "filter": ""
+    },
+    "triggers": {
+      "acknowledged": 2,
+      "count": true,
+      "minSeverity": 3
+    }
+  },
+  {
+    "application": {
+      "filter": ""
+    },
+    "datasource": {
+      "type": "alexanderzobnin-zabbix-datasource",
+      "uid": "gHQN77VVz"
+    },
+    "functions": [],
+    "group": {
+      "filter": "Jateng/Cisco"
+    },
+    "hide": false,
+    "host": {
+      "filter": "221.132.196.60 ran-agg-gombel.4"
+    },
+    "item": {
+      "filter": "/.*speed|.*Percentage out/"
+    },
+    "itemTag": {
+      "filter": "/description.*(be1_be1|te0/6/0/3_te0/0/0/7|te0/6/0/6_te0/7/0/5).*/"
+    },
+    "options": {
+      "disableDataAlignment": false,
+      "showDisabledItems": false,
+      "skipEmptyValues": false,
+      "useZabbixValueMapping": false
+    },
+    "proxy": {
+      "filter": ""
+    },
+    "queryType": "0",
+    "refId": "221.132.196.60 ran-agg-gombel.4",
+    "resultFormat": "time_series",
+    "table": {
+      "skipEmptyValues": false
+    },
+    "tags": {
+      "filter": ""
+    },
+    "trigger": {
+      "filter": ""
+    },
+    "triggers": {
+      "acknowledged": 2,
+      "count": true,
+      "minSeverity": 3
+    }
+  },
+  {
+    "application": {
+      "filter": ""
+    },
+    "datasource": {
+      "type": "alexanderzobnin-zabbix-datasource",
+      "uid": "gHQN77VVz"
+    },
+    "functions": [],
+    "group": {
+      "filter": "Jateng/Cisco"
+    },
+    "hide": false,
+    "host": {
+      "filter": "221.132.196.69 ran-agg-nusukan.3"
+    },
+    "item": {
+      "filter": "/.*speed|.*Percentage out/"
+    },
+    "itemTag": {
+      "filter": "/description.*(te0/3/0/36_te0/6/0/7|te0/3/0/46_te0/6/0/3|te0/0/1/0_te0/6/0/2|te0/0/1/6_te0/0/1/6|te0/3/0/44_te0/0/0/0).*/"
+    },
+    "options": {
+      "disableDataAlignment": false,
+      "showDisabledItems": false,
+      "skipEmptyValues": false,
+      "useZabbixValueMapping": false
+    },
+    "proxy": {
+      "filter": ""
+    },
+    "queryType": "0",
+    "refId": "221.132.196.69 ran-agg-nusukan.3",
+    "resultFormat": "time_series",
+    "table": {
+      "skipEmptyValues": false
+    },
+    "tags": {
+      "filter": ""
+    },
+    "trigger": {
+      "filter": ""
+    },
+    "triggers": {
+      "acknowledged": 2,
+      "count": true,
+      "minSeverity": 3
+    }
+  },
+  {
+    "application": {
+      "filter": ""
+    },
+    "datasource": {
+      "type": "alexanderzobnin-zabbix-datasource",
+      "uid": "gHQN77VVz"
+    },
+    "functions": [],
+    "group": {
+      "filter": "Jateng/Cisco"
+    },
+    "hide": false,
+    "host": {
+      "filter": "221.132.196.16 ran-agg-kotabaru.2"
+    },
+    "item": {
+      "filter": "/.*speed|.*Percentage out/"
+    },
+    "itemTag": {
+      "filter": "/description.*(te0/1/0/39_te0/0/1/0).*/"
+    },
+    "options": {
+      "disableDataAlignment": false,
+      "showDisabledItems": false,
+      "skipEmptyValues": false,
+      "useZabbixValueMapping": false
+    },
+    "proxy": {
+      "filter": ""
+    },
+    "queryType": "0",
+    "refId": "221.132.196.16 ran-agg-kotabaru.2",
+    "resultFormat": "time_series",
+    "table": {
+      "skipEmptyValues": false
+    },
+    "tags": {
+      "filter": ""
+    },
+    "trigger": {
+      "filter": ""
+    },
+    "triggers": {
+      "acknowledged": 2,
+      "count": true,
+      "minSeverity": 3
+    }
+  },
+  {
+    "application": {
+      "filter": ""
+    },
+    "datasource": {
+      "type": "alexanderzobnin-zabbix-datasource",
+      "uid": "gHQN77VVz"
+    },
+    "functions": [],
+    "group": {
+      "filter": "Jateng/Cisco"
+    },
+    "hide": false,
+    "host": {
+      "filter": "221.132.196.70 ran-agg-nusukan.4"
+    },
+    "item": {
+      "filter": "/.*speed|.*Percentage out/"
+    },
+    "itemTag": {
+      "filter": "/description.*(te0/7/1/6_te0/0/1/6|te0/3/0/45_te0/7/0/2|te0/0/1/7_te0/0/0/5|te0/0/1/1_te0/0/0/4).*/"
+    },
+    "options": {
+      "disableDataAlignment": false,
+      "showDisabledItems": false,
+      "skipEmptyValues": false,
+      "useZabbixValueMapping": false
+    },
+    "proxy": {
+      "filter": ""
+    },
+    "queryType": "0",
+    "refId": "221.132.196.70 ran-agg-nusukan.4",
+    "resultFormat": "time_series",
+    "table": {
+      "skipEmptyValues": false
+    },
+    "tags": {
+      "filter": ""
+    },
+    "trigger": {
+      "filter": ""
+    },
+    "triggers": {
+      "acknowledged": 2,
+      "count": true,
+      "minSeverity": 3
+    }
+  },
+  {
+    "application": {
+      "filter": ""
+    },
+    "datasource": {
+      "type": "alexanderzobnin-zabbix-datasource",
+      "uid": "gHQN77VVz"
+    },
+    "functions": [],
+    "group": {
+      "filter": "Jateng/Cisco"
+    },
+    "hide": false,
+    "host": {
+      "filter": "221.132.196.59 ran-agg-gombel.3"
+    },
+    "item": {
+      "filter": "/.*speed|.*Percentage out/"
+    },
+    "itemTag": {
+      "filter": "/description.*(te0/0/1/7_te0/3/0/36|te0/6/0/3_te0/3/0/46|te0/6/0/2_te0/0/1/0|te0/0/1/6_te0/0/1/6|te0/0/0/0_te0/3/0/44|te0/0/0/2_te0/0/0/7|te0/0/0/6_te0/7/0/5|te0/0/1/0_te0/1/0/39|be1_be1).*/"
+    },
+    "options": {
+      "disableDataAlignment": false,
+      "showDisabledItems": false,
+      "skipEmptyValues": false,
+      "useZabbixValueMapping": false
+    },
+    "proxy": {
+      "filter": ""
+    },
+    "queryType": "0",
+    "refId": "221.132.196.59 ran-agg-gombel.3",
+    "resultFormat": "time_series",
+    "table": {
+      "skipEmptyValues": false
+    },
+    "tags": {
+      "filter": ""
+    },
+    "trigger": {
+      "filter": ""
+    },
+    "triggers": {
+      "acknowledged": 2,
+      "count": true,
+      "minSeverity": 3
+    }
+  },
+  {
+    "application": {
+      "filter": ""
+    },
+    "datasource": {
+      "type": "alexanderzobnin-zabbix-datasource",
+      "uid": "gHQN77VVz"
+    },
+    "functions": [],
+    "group": {
+      "filter": "Jateng/Cisco"
+    },
+    "hide": false,
+    "host": {
+      "filter": "221.132.196.57 ran-agg-sukoharjo.3"
+    },
+    "item": {
+      "filter": "/.*speed|.*Percentage out/"
+    },
+    "itemTag": {
+      "filter": "/description.*(te0/0/0/7_te0/0/0/2|te0/7/0/5_te0/0/0/6|te0/7/1/6_te0/0/1/6|te0/7/0/2_te0/3/0/45|te0/0/0/5_te0/0/1/7|te0/0/0/4_te0/0/1/1|te0/0/1/0_te0/1/0/39|BE1_BE1).*/"
+    },
+    "options": {
+      "disableDataAlignment": false,
+      "showDisabledItems": false,
+      "skipEmptyValues": false,
+      "useZabbixValueMapping": false
+    },
+    "proxy": {
+      "filter": ""
+    },
+    "queryType": "0",
+    "refId": "221.132.196.57 ran-agg-sukoharjo.3",
+    "resultFormat": "time_series",
+    "table": {
+      "skipEmptyValues": false
+    },
+    "tags": {
+      "filter": ""
+    },
+    "trigger": {
+      "filter": ""
+    },
+    "triggers": {
+      "acknowledged": 2,
+      "count": true,
+      "minSeverity": 3
+    }
+  },
+  {
+    "application": {
+      "filter": ""
+    },
+    "datasource": {
+      "type": "alexanderzobnin-zabbix-datasource",
+      "uid": "gHQN77VVz"
+    },
+    "functions": [],
+    "group": {
+      "filter": "Jateng/Cisco"
+    },
+    "hide": false,
+    "host": {
+      "filter": "221.132.196.15 ran-agg-kotabaru.1"
+    },
+    "item": {
+      "filter": "/.*speed|.*Percentage out/"
+    },
+    "itemTag": {
+      "filter": "/description.*(te0/1/0/39_te0/0/1/0).*/"
+    },
+    "options": {
+      "disableDataAlignment": false,
+      "showDisabledItems": false,
+      "skipEmptyValues": false,
+      "useZabbixValueMapping": false
+    },
+    "proxy": {
+      "filter": ""
+    },
+    "queryType": "0",
+    "refId": "221.132.196.15 ran-agg-kotabaru.1",
     "resultFormat": "time_series",
     "table": {
       "skipEmptyValues": false

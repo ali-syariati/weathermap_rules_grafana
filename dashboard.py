@@ -150,13 +150,13 @@ def panel_str(
                     "filter": dashboard_query_data['group_filter']
                 },
                 "host": {
-                    "filter": dashboard_query_data['host_filter_outbound']
+                    "filter": dashboard_query_data['host_filter']
                 },
                 "item": {
                     "filter": dashboard_query_data['item_filter_outbound']
                 },
                 "itemTag": {
-                    "filter": dashboard_query_data['item_tag_filter_outbound']
+                    "filter": dashboard_query_data['item_tag_filter']
                 },
                 "options": {
                     "disableDataAlignment": False,
@@ -217,13 +217,13 @@ def panel_str(
                 },
                 "hide": False,
                 "host": {
-                    "filter": dashboard_query_data['host_filter_inbound']
+                    "filter": dashboard_query_data['host_filter']
                 },
                 "item": {
                     "filter": dashboard_query_data['item_filter_inbound']
                 },
                 "itemTag": {
-                    "filter": dashboard_query_data['item_tag_filter_inbound']
+                    "filter": dashboard_query_data['item_tag_filter']
                 },
                 "options": {
                     "disableDataAlignment": False,

@@ -1,1739 +1,111 @@
 {
-  "annotations": {
-    "list": [
-      {
-        "builtIn": 1,
-        "datasource": {
-          "type": "grafana",
-          "uid": "-- Grafana --"
-        },
-        "enable": true,
-        "hide": true,
-        "iconColor": "rgba(0, 211, 255, 1)",
-        "name": "Annotations & Alerts",
-        "target": {
-          "limit": 100,
-          "matchAny": false,
-          "tags": [],
-          "type": "dashboard"
-        },
-        "type": "dashboard"
-      }
-    ]
-  },
-  "editable": true,
-  "fiscalYearStartMonth": 0,
-  "graphTooltip": 0,
-  "id": 422,
-  "links": [],
-  "liveNow": false,
   "panels": [
     {
       "datasource": {
-        "type": "datasource",
-        "uid": "-- Mixed --"
+        "type": "alexanderzobnin-zabbix-datasource",
+        "uid": "gHQN77VVz"
       },
-      "flowchartsData": {
-        "allowDrawio": true,
-        "editorTheme": "kennedy",
-        "editorUrl": "https://embed.diagrams.net/",
-        "flowcharts": [
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 9,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "deckbytes"
+        },
+        "overrides": [
           {
-            "bgColor": "#fff",
-            "center": true,
-            "csv": "",
-            "download": false,
-            "enableAnim": true,
-            "grid": false,
-            "lock": true,
-            "name": "Main",
-            "scale": true,
-            "tooltip": true,
-            "type": "xml",
-            "url": "http://<YourUrl>/<Your XML/drawio file/api>",
-            "xml": "<mxGraphModel dx=\"1644\" dy=\"1680\" grid=\"1\" gridSize=\"10\" guides=\"1\" tooltips=\"1\" connect=\"1\" arrows=\"1\" fold=\"1\" page=\"1\" pageScale=\"1\" pageWidth=\"850\" pageHeight=\"1100\" math=\"0\" shadow=\"0\"><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"60\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=#000000;arcSize=20;shape=flexArrow;width=10;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-279\" y=\"60\" as=\"sourcePoint\"/><mxPoint x=\"-280\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-79\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=#000000;shape=flexArrow;width=10;fillColor=#000000;\" parent=\"1\" source=\"9cHFc5Lmw2Qs3Sorvx_S-166\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"520\" y=\"118.68000000000006\" as=\"sourcePoint\"/><mxPoint x=\"520\" y=\"440\" as=\"targetPoint\"/><Array as=\"points\"><mxPoint x=\"520\" y=\"250\"/></Array></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-3\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;arcSize=20;shape=flexArrow;width=10;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-521\" y=\"759.61\" as=\"sourcePoint\"/><mxPoint x=\"-521\" y=\"438\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-4\" value=\"\" style=\"endArrow=none;html=1;rounded=0;jumpStyle=arc;entryX=1.002;entryY=0.566;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-600\" y=\"760\" as=\"sourcePoint\"/><mxPoint x=\"-279.98\" y=\"762.41\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-5\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.836;exitDx=0;exitDy=0;exitPerimeter=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;arcSize=20;shape=flexArrow;width=10;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-481\" y=\"759.61\" as=\"sourcePoint\"/><mxPoint x=\"-482\" y=\"438\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-7\" value=\"\" style=\"endArrow=none;html=1;rounded=0;jumpStyle=arc;strokeColor=#000000;\" parent=\"1\" source=\"9cHFc5Lmw2Qs3Sorvx_S-28\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-479.5\" y=\"800.33\" as=\"sourcePoint\"/><mxPoint x=\"-479.5\" y=\"761.61\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-8\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.836;exitDx=0;exitDy=0;exitPerimeter=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;arcSize=20;shape=flexArrow;width=10;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-440\" y=\"761.61\" as=\"sourcePoint\"/><mxPoint x=\"-440\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-10\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.836;exitDx=0;exitDy=0;exitPerimeter=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;arcSize=20;shape=flexArrow;width=10;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-399\" y=\"761.61\" as=\"sourcePoint\"/><mxPoint x=\"-399\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-12\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.836;exitDx=0;exitDy=0;exitPerimeter=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;arcSize=20;shape=flexArrow;width=10;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-562\" y=\"759.61\" as=\"sourcePoint\"/><mxPoint x=\"-562\" y=\"438\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-14\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.836;exitDx=0;exitDy=0;exitPerimeter=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;arcSize=20;shape=flexArrow;width=10;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-601\" y=\"759.61\" as=\"sourcePoint\"/><mxPoint x=\"-601\" y=\"438\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-17\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;arcSize=20;shape=flexArrow;width=10;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-602.5\" y=\"117.68\" as=\"sourcePoint\"/><mxPoint x=\"-602\" y=\"438\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-19\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;arcSize=20;shape=flexArrow;width=10;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-562.5\" y=\"117.68\" as=\"sourcePoint\"/><mxPoint x=\"-562\" y=\"438\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-21\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;arcSize=20;shape=flexArrow;width=10;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-522.5\" y=\"117.68\" as=\"sourcePoint\"/><mxPoint x=\"-522\" y=\"438\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-23\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;arcSize=20;shape=flexArrow;width=10;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-482.5\" y=\"117.68\" as=\"sourcePoint\"/><mxPoint x=\"-482\" y=\"438\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-25\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;arcSize=20;shape=flexArrow;width=10;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-440.5\" y=\"119.68\" as=\"sourcePoint\"/><mxPoint x=\"-440\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-27\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;arcSize=20;shape=flexArrow;width=10;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-400.5\" y=\"119.68\" as=\"sourcePoint\"/><mxPoint x=\"-400\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-28\" value=\"\" style=\"shape=mxgraph.cisco.routers.router;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"-518.5\" y=\"801.61\" width=\"78\" height=\"53\" as=\"geometry\"/></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-29\" value=\"\" style=\"shape=mxgraph.cisco.routers.router;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"-519\" y=\"27\" width=\"78\" height=\"53\" as=\"geometry\"/></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-30\" value=\"\" style=\"endArrow=none;html=1;rounded=0;jumpStyle=arc;strokeColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-480.28999999999996\" y=\"119.68\" as=\"sourcePoint\"/><mxPoint x=\"-480.28999999999996\" y=\"79.68\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-32\" value=\"&lt;font style=&quot;font-size: 15px;&quot;&gt;core-pengayoman.1&lt;/font&gt;\" style=\"text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;labelBorderColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"-560\" y=\"59.53\" width=\"160\" height=\"30\" as=\"geometry\"/></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-34\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.836;exitDx=0;exitDy=0;exitPerimeter=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;arcSize=20;shape=flexArrow;width=10;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-360\" y=\"761.9300000000001\" as=\"sourcePoint\"/><mxPoint x=\"-360\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-38\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;arcSize=20;shape=flexArrow;width=10;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-361.5\" y=\"120.00000000000006\" as=\"sourcePoint\"/><mxPoint x=\"-361\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-39\" value=\"\" style=\"endArrow=none;html=1;rounded=0;jumpStyle=arc;strokeColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-600\" y=\"120\" as=\"sourcePoint\"/><mxPoint x=\"-360\" y=\"119\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-41\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=#000000;arcSize=20;shape=flexArrow;width=10;\" parent=\"1\" source=\"9cHFc5Lmw2Qs3Sorvx_S-165\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-280.5\" y=\"119.68000000000006\" as=\"sourcePoint\"/><mxPoint x=\"-280\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-42\" value=\"\" style=\"shape=mxgraph.cisco.routers.router;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"-319\" y=\"27\" width=\"78\" height=\"53\" as=\"geometry\"/></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-44\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.836;exitDx=0;exitDy=0;exitPerimeter=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;arcSize=20;shape=flexArrow;width=10;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-280\" y=\"761.93\" as=\"sourcePoint\"/><mxPoint x=\"-280\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-46\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;shape=flexArrow;width=15;strokeColor=#000000;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"440\" y=\"39.350000000000364\" as=\"sourcePoint\"/><mxPoint x=\"120\" y=\"39\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-48\" value=\"\" style=\"endArrow=none;html=1;rounded=0;jumpStyle=arc;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"479.4899999999998\" y=\"39.24000000000069\" as=\"sourcePoint\"/><mxPoint x=\"440\" y=\"39.24000000000069\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-49\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;shape=flexArrow;width=15;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-200\" y=\"40\" as=\"sourcePoint\"/><mxPoint x=\"120\" y=\"40\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-51\" value=\"\" style=\"endArrow=none;html=1;rounded=0;jumpStyle=arc;entryX=0;entryY=1;entryDx=0;entryDy=0;strokeColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-240\" y=\"40\" as=\"sourcePoint\"/><mxPoint x=\"-200\" y=\"40\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-52\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;arcSize=5;shape=flexArrow;width=10;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-200\" y=\"80\" as=\"sourcePoint\"/><mxPoint x=\"120\" y=\"80\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-57\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;arcSize=5;shape=flexArrow;width=10;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"440\" y=\"80.35000000000036\" as=\"sourcePoint\"/><mxPoint x=\"120\" y=\"80\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-59\" value=\"\" style=\"shape=mxgraph.cisco.routers.router;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"480\" y=\"25\" width=\"78\" height=\"53\" as=\"geometry\"/></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-61\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;shape=flexArrow;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"639.5\" y=\"760\" as=\"sourcePoint\"/><mxPoint x=\"640\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-62\" value=\"\" style=\"endArrow=none;html=1;rounded=0;jumpStyle=arc;exitX=1.004;exitY=0.57;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"519.4000000000001\" y=\"759.9599999999999\" as=\"sourcePoint\"/><mxPoint x=\"840\" y=\"760\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-63\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.836;exitDx=0;exitDy=0;exitPerimeter=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;shape=flexArrow;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"679.5\" y=\"760\" as=\"sourcePoint\"/><mxPoint x=\"680\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-65\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.836;exitDx=0;exitDy=0;exitPerimeter=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;shape=flexArrow;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"719.5\" y=\"760\" as=\"sourcePoint\"/><mxPoint x=\"720\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-67\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.836;exitDx=0;exitDy=0;exitPerimeter=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;shape=flexArrow;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"759.5\" y=\"760\" as=\"sourcePoint\"/><mxPoint x=\"760\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-69\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.836;exitDx=0;exitDy=0;exitPerimeter=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;shape=flexArrow;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"598.5\" y=\"760\" as=\"sourcePoint\"/><mxPoint x=\"600\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-71\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.836;exitDx=0;exitDy=0;exitPerimeter=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;shape=flexArrow;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"519.5\" y=\"760\" as=\"sourcePoint\"/><mxPoint x=\"520\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-73\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.836;exitDx=0;exitDy=0;exitPerimeter=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;shape=flexArrow;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"799.5\" y=\"760.3200000000002\" as=\"sourcePoint\"/><mxPoint x=\"800\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-75\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.836;exitDx=0;exitDy=0;exitPerimeter=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;shape=flexArrow;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"838.5\" y=\"760.3200000000002\" as=\"sourcePoint\"/><mxPoint x=\"840\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-82\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;shape=flexArrow;width=10;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"600\" y=\"118.68000000000006\" as=\"sourcePoint\"/><mxPoint x=\"600\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-84\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;shape=flexArrow;width=10;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"640\" y=\"118.68000000000006\" as=\"sourcePoint\"/><mxPoint x=\"640\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-86\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;startArrow=none;shape=flexArrow;width=10;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"680\" y=\"120\" as=\"sourcePoint\"/><mxPoint x=\"680\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-88\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;shape=flexArrow;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"720\" y=\"118.68000000000006\" as=\"sourcePoint\"/><mxPoint x=\"720\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-90\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;shape=flexArrow;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"760\" y=\"118.68000000000006\" as=\"sourcePoint\"/><mxPoint x=\"760\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-92\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;shape=flexArrow;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"800\" y=\"118.68000000000006\" as=\"sourcePoint\"/><mxPoint x=\"800\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-93\" value=\"\" style=\"shape=mxgraph.cisco.routers.router;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"681.5\" y=\"26\" width=\"78\" height=\"53\" as=\"geometry\"/></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-94\" value=\"\" style=\"endArrow=none;html=1;rounded=0;jumpStyle=arc;strokeColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"720.21\" y=\"118.68000000000006\" as=\"sourcePoint\"/><mxPoint x=\"720.21\" y=\"78.68000000000006\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-97\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;shape=flexArrow;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"840\" y=\"119\" as=\"sourcePoint\"/><mxPoint x=\"840\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-98\" value=\"\" style=\"endArrow=none;html=1;rounded=0;jumpStyle=arc;exitX=0;exitY=0.561;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"600.1699999999996\" y=\"118.68000000000006\" as=\"sourcePoint\"/><mxPoint x=\"840\" y=\"120\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-100\" value=\"\" style=\"endArrow=none;html=1;rounded=0;strokeColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-200\" y=\"80\" as=\"sourcePoint\"/><mxPoint x=\"-200\" y=\"40\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-101\" value=\"\" style=\"endArrow=none;html=1;rounded=0;entryX=0.999;entryY=0.545;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#000000;exitX=0.005;exitY=0.708;exitDx=0;exitDy=0;exitPerimeter=0;\" parent=\"1\" source=\"9cHFc5Lmw2Qs3Sorvx_S-166\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"450\" y=\"50\" as=\"sourcePoint\"/><mxPoint x=\"439.75999999999976\" y=\"38.350000000000136\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-102\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;shape=flexArrow;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"440.5\" y=\"840.9600000000003\" as=\"sourcePoint\"/><mxPoint x=\"120.5\" y=\"840.93\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-104\" value=\"\" style=\"endArrow=none;html=1;rounded=0;jumpStyle=arc;strokeColor=#000000;exitX=1.019;exitY=0.743;exitDx=0;exitDy=0;exitPerimeter=0;\" parent=\"1\" source=\"9cHFc5Lmw2Qs3Sorvx_S-115\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"800.5\" y=\"840.93\" as=\"sourcePoint\"/><mxPoint x=\"440.5\" y=\"840.8500000000006\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-105\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;shape=flexArrow;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-199.50000000000045\" y=\"841.6099999999999\" as=\"sourcePoint\"/><mxPoint x=\"120.5\" y=\"840.93\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-107\" value=\"\" style=\"endArrow=none;html=1;rounded=0;jumpStyle=arc;entryX=0;entryY=1;entryDx=0;entryDy=0;strokeColor=#000000;exitX=0.488;exitY=0.433;exitDx=0;exitDy=0;exitPerimeter=0;\" parent=\"1\" source=\"9cHFc5Lmw2Qs3Sorvx_S-169\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-559.5\" y=\"840.93\" as=\"sourcePoint\"/><mxPoint x=\"-199.50000000000045\" y=\"842.6099999999999\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-108\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;shape=flexArrow;width=15;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-199.50000000000045\" y=\"800.93\" as=\"sourcePoint\"/><mxPoint x=\"120.5\" y=\"800.93\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-110\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;shape=flexArrow;width=15;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"440.5\" y=\"801.2800000000003\" as=\"sourcePoint\"/><mxPoint x=\"120.5\" y=\"800.93\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-112\" value=\"\" style=\"endArrow=none;html=1;rounded=0;strokeColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-200\" y=\"800\" as=\"sourcePoint\"/><mxPoint x=\"-199.50000000000045\" y=\"842.6099999999999\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-113\" value=\"\" style=\"endArrow=none;html=1;rounded=0;entryX=0.999;entryY=0.545;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"440\" y=\"800\" as=\"sourcePoint\"/><mxPoint x=\"440.25999999999976\" y=\"840.9600000000002\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-114\" value=\"\" style=\"endArrow=none;html=1;rounded=0;jumpStyle=arc;strokeColor=#000000;\" parent=\"1\" source=\"9cHFc5Lmw2Qs3Sorvx_S-115\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"719.5\" y=\"799.6500000000001\" as=\"sourcePoint\"/><mxPoint x=\"719.4999999999995\" y=\"760.9300000000001\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-115\" value=\"\" style=\"shape=mxgraph.cisco.routers.router;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"680.5\" y=\"800.6100000000001\" width=\"78\" height=\"53\" as=\"geometry\"/></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-165\" value=\"&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 15px;&quot;&gt;sr-sorong.2-new&lt;/font&gt;\" style=\"text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0;fontFamily=Courier New;labelBackgroundColor=#FFFFFF;labelBorderColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"-359\" y=\"60\" width=\"160\" height=\"30\" as=\"geometry\"/></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-166\" value=\"&lt;font style=&quot;font-size: 15px;&quot;&gt;sr-sorong.1-new&lt;/font&gt;\" style=\"text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;labelBorderColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"439\" y=\"59\" width=\"160\" height=\"30\" as=\"geometry\"/></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-167\" value=\"&lt;font style=&quot;font-size: 15px;&quot;&gt;core-sudiang.1&lt;/font&gt;\" style=\"text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;labelBorderColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"641\" y=\"58.53\" width=\"160\" height=\"30\" as=\"geometry\"/></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-168\" value=\"&lt;font style=&quot;font-size: 15px;&quot;&gt;sr-pattimura.1-new&lt;/font&gt;\" style=\"text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;labelBorderColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"641\" y=\"829.9999999999999\" width=\"160\" height=\"30\" as=\"geometry\"/></mxCell><mxCell id=\"9cHFc5Lmw2Qs3Sorvx_S-169\" value=\"&lt;font style=&quot;font-size: 15px;&quot;&gt;sr-pattimura.2-new&lt;/font&gt;\" style=\"text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;labelBorderColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"-558\" y=\"829.6099999999999\" width=\"160\" height=\"30\" as=\"geometry\"/></mxCell><mxCell id=\"16\" value=\"BE1 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=0;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"-163.06\" y=\"26\" width=\"203.06\" height=\"26.13\" as=\"geometry\"/></mxCell><mxCell id=\"20\" value=\"BE1 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=0;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"199.94\" y=\"25\" width=\"203.06\" height=\"26.13\" as=\"geometry\"/></mxCell><mxCell id=\"21\" value=\"BE5 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=0;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"-163.06\" y=\"68\" width=\"203.06\" height=\"26.13\" as=\"geometry\"/></mxCell><mxCell id=\"22\" value=\"BE5 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=0;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"200.94\" y=\"66\" width=\"203.06\" height=\"26.13\" as=\"geometry\"/></mxCell><mxCell id=\"23\" value=\"BE60 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=0;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"-163.06\" y=\"789\" width=\"203.06\" height=\"26.13\" as=\"geometry\"/></mxCell><mxCell id=\"24\" value=\"BE60 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=0;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"200.94\" y=\"788\" width=\"203.06\" height=\"26.13\" as=\"geometry\"/></mxCell><mxCell id=\"25\" value=\"te0/5/0/3 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=0;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"-164.06\" y=\"830\" width=\"203.06\" height=\"26.13\" as=\"geometry\"/></mxCell><mxCell id=\"26\" value=\"te0/5/0/1 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=0;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"199.94\" y=\"827.61\" width=\"203.06\" height=\"26.13\" as=\"geometry\"/></mxCell><mxCell id=\"32\" value=\"te0/10/0/14 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"-623.69\" y=\"244.62\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"33\" value=\"te0/2/1/7 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"-664\" y=\"244.62\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"34\" value=\"te0/2/1/8 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"-704.56\" y=\"245.06\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"35\" value=\"te0/2/0/13 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"-703\" y=\"608.1800000000001\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"36\" value=\"te0/2/0/12 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"-663\" y=\"609.1800000000001\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"37\" value=\"te0/2/0/6 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"-622\" y=\"608.1800000000001\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"38\" value=\"te0/2/0/5 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"-583\" y=\"608.1800000000001\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"43\" value=\"te0/1/0/7 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"419\" y=\"243.93\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"44\" value=\"te0/10/0/13 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"499\" y=\"243.93\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"45\" value=\"te0/10/0/6 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"539\" y=\"243.93\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"46\" value=\"te0/9/0/13 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"578\" y=\"244.93\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"47\" value=\"te0/7/0/1 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"619\" y=\"244.93\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"48\" value=\"te0/0/0/13 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"659\" y=\"244.93\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"49\" value=\"te0/19/0/2 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"699\" y=\"244.93\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"50\" value=\"te0/19/0/3 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"739\" y=\"244.93\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"51\" value=\"te0/2/0/12 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"739.5\" y=\"609.02\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"52\" value=\"te0/2/0/11 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"698.5\" y=\"609.02\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"53\" value=\"te0/2/0/5 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"659.5\" y=\"609.02\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"54\" value=\"te0/2/0/8 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"618.5\" y=\"609.02\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"55\" value=\"te0/2/0/4 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"578.5\" y=\"609.02\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"56\" value=\"te0/5/0/1 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"538.5\" y=\"609.02\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"57\" value=\"te0/2/0/1 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"498\" y=\"609.68\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"61\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.836;exitDx=0;exitDy=0;exitPerimeter=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;arcSize=20;shape=flexArrow;width=10;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-280\" y=\"761.9299999999998\" as=\"sourcePoint\"/><mxPoint x=\"-280\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"62\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;arcSize=20;shape=flexArrow;width=10;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-361.5\" y=\"120.00000000000006\" as=\"sourcePoint\"/><mxPoint x=\"-361\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"63\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.836;exitDx=0;exitDy=0;exitPerimeter=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;arcSize=20;shape=flexArrow;width=10;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-360\" y=\"761.9300000000001\" as=\"sourcePoint\"/><mxPoint x=\"-360\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"64\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;arcSize=20;shape=flexArrow;width=10;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-400.5\" y=\"119.68\" as=\"sourcePoint\"/><mxPoint x=\"-400\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"65\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.836;exitDx=0;exitDy=0;exitPerimeter=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;arcSize=20;shape=flexArrow;width=10;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-399\" y=\"761.6100000000001\" as=\"sourcePoint\"/><mxPoint x=\"-399\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"66\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.836;exitDx=0;exitDy=0;exitPerimeter=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;arcSize=20;shape=flexArrow;width=10;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-440\" y=\"761.6100000000001\" as=\"sourcePoint\"/><mxPoint x=\"-440\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"67\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;arcSize=20;shape=flexArrow;width=10;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-440.5\" y=\"119.68\" as=\"sourcePoint\"/><mxPoint x=\"-440\" y=\"440\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"68\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;jumpStyle=arc;strokeWidth=1;strokeColor=#000000;arcSize=20;shape=flexArrow;width=10;fillColor=#000000;\" parent=\"1\" edge=\"1\"><mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-482.5\" y=\"117.68\" as=\"sourcePoint\"/><mxPoint x=\"-482\" y=\"438\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"39\" value=\"te0/2/0/4 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"-541\" y=\"608.1800000000001\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"40\" value=\"te0/5/0/0 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"-500\" y=\"609.1800000000001\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"41\" value=\"te0/2/0/0 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"-460\" y=\"609.1800000000001\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"42\" value=\"te0/2/0/1 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"-381\" y=\"609.1800000000001\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"27\" value=\"te0/2/0/7 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"-380.25\" y=\"243.62\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"28\" value=\"te0/2/0/9 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"-463.5\" y=\"244.74\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"29\" value=\"te0/0/0/9 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"-501.5\" y=\"244.74\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"30\" value=\"te0/9/1/12 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"-541.5\" y=\"244.74\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"31\" value=\"te0/10/1/12 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"-584\" y=\"244.62\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"69\" value=\"te0/5/0/0 - received - speed\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=90;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"418\" y=\"607.6800000000001\" width=\"203.06\" height=\"26.63\" as=\"geometry\"/></mxCell><mxCell id=\"70\" value=\"&lt;font style=&quot;font-size: 19px;&quot;&gt;Last Update: name / dateinfo&lt;/font&gt;\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=0;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;fontSize=19;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"960\" y=\"20\" width=\"480\" height=\"40\" as=\"geometry\"/></mxCell><mxCell id=\"71\" value=\"&lt;b&gt;&lt;font style=&quot;font-size: 40px;&quot;&gt;Ambon IPBB&lt;/font&gt;&lt;/b&gt;\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=0;labelBorderColor=none;fillColor=none;fontColor=#000000;strokeColor=none;\" parent=\"1\" vertex=\"1\"><mxGeometry x=\"-680\" y=\"-40\" width=\"330\" height=\"26.13\" as=\"geometry\"/></mxCell><mxCell id=\"72\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/png,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ZOu7n//852XXaYBgKz3bv+nnv//7v5cNY0844YRidYTFEd8dTebPKeDA1qjRFHR21rsYQmp7+eeee64I4k9/+tOigX/1q18VbR37bo6DF7S5jWLFBB5++OEi9HbadizcimhH31gDgMpmsPYYtTWc/SRZEEAjtp63x6ct4OwL2QxMRl353X4OpMXQontEUJnmjz/+eNlinmDZ5p62vuGGG8rmrkcfffSCe3wuZjjclSeeeKJ64IEHqkcffbR66aWXirALInaS/TE//elPF8tAjIFL4WNDWJv3sg6ACmJt2COUVZHxhU5OTsfvBIaW3CfC/7e//a1YCrfcckvRzpdccknZcv7OO++srrrqqhLpJ5w0MoEjrMMQwdcey+DBBx+srr/++gJI4hm9SFt2lbbBLyvmRz/6UQk+nnXWWZXPbbfdVl133XVl09tvfvOb1Zo1a4rrE7td96o3j7eTA8M9We0cy9T2ijnOdSBwgnZ2djbV94UvfKGan58vW9zT0szye++9t3rxxRerQw89tAT8mnGAQRjARVDXM888U3FPAMSXv/zlynbzfvciFoEdvO0izdKwNf2+++5b4gwxJSk4CbAEIbvtHN6r7jzePg4kMLTgnrz11lvVT37yk6JxWQM0MBfC7ABhFHy0VuD2228vH9cQvn322WebAOEgQwEML7zwQnFNnnrqqer888+vWCZiDIKK/QhAAK5169ZV4h3cHdaEegEXoMq4Qj8utv98AsMy3yMCxbQnlKwFAAAQ+OchYH6bLbjvvvuK+e5aboeyiyWCTaub4aDV52uLREwAWLAaBiFgxUqwiElcgqXDDWHlAKs999xzkGrymhZzIIGhxTdnkK4NAw5mDL761a+WOMbnPve5gQGh2R+zFGIUGzZsKB9AYUpVfVZDJk03BxIYpvT+AQSm/GuvvVY+3WYSmkNjKbASPvaxjxWLhBUSZC3CYojrw2oxPWkxkw9AOP7444v1sZi68tp2ciCBoZ33ZaBe0dgWJokPcC0WIm6CIOPpp59e3IBwUxYq0+0cQAIkd911VwmYind873vfKwFSLoTzQChpujmQwDCl948A8uuff/75MuXYL3AoLiBIaB3EqOQlKmsWWAxWSZ5zzjllwVMsrba2YdB4xah9yfKT4UACw2T4OvFaaWUzEwcccEB18skn97UYrCc4+OCDyyzCqJ0zxQkc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;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"1050\" y=\"130\" width=\"262\" height=\"396\" as=\"geometry\"/></mxCell><mxCell id=\"73\" value=\"&lt;font style=&quot;font-size: 19px;&quot;&gt;dateinfo&lt;/font&gt;\" style=\"rounded=0;whiteSpace=wrap;html=1;glass=0;labelBackgroundColor=none;rotation=0;labelBorderColor=none;fillColor=#FFFFFF;fontColor=#000000;fontSize=19;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"960\" y=\"68\" width=\"480\" height=\"40\" as=\"geometry\"/></mxCell></root></mxGraphModel>",
-            "zoom": "100%"
+            "matcher": {
+              "id": "byName",
+              "options": "Outbound"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "dark-blue",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Inbound"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "dark-green",
+                  "mode": "fixed"
+                }
+              }
+            ]
           }
         ]
       },
-      "format": "short",
-      "graphId": "flowchart_2",
       "gridPos": {
-        "h": 23,
+        "h": 9,
         "w": 24,
         "x": 0,
         "y": 0
       },
-      "id": 2,
-      "rulesData": {
-        "rulesData": [
-          {
-            "aggregation": "current",
-            "alias": "global",
-            "column": "Time",
-            "dateColumn": "Time",
-            "dateFormat": "YYYY-MM-DD HH:mm:ss",
-            "dateTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "0d"
-              },
-              {
-                "color": "rgba(237, 129, 40, 0.89)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "-1d"
-              },
-              {
-                "color": "rgba(50, 172, 45, 0.97)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "-1w"
-              }
-            ],
-            "decimals": 2,
-            "globalThreshold": true,
-            "gradient": false,
-            "hidden": false,
-            "invert": false,
-            "mappingType": 1,
-            "mapsDat": {
-              "events": {
-                "dataList": [],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "links": {
-                "dataList": [],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "shapes": {
-                "dataList": [
-                  {
-                    "colorOn": "a",
-                    "hidden": false,
-                    "pattern": "9cHFc5Lmw2Qs3Sorvx_S-49",
-                    "style": "fillColor"
-                  },
-                  {
-                    "colorOn": "a",
-                    "hidden": false,
-                    "pattern": "WufIG9lqQWVk5ltwFjjU-408",
-                    "style": "fillColor"
-                  },
-                  {
-                    "colorOn": "a",
-                    "hidden": false,
-                    "pattern": "9cHFc5Lmw2Qs3Sorvx_S-52",
-                    "style": "fillColor"
-                  },
-                  {
-                    "colorOn": "a",
-                    "hidden": false,
-                    "pattern": "9cHFc5Lmw2Qs3Sorvx_S-57",
-                    "style": "fillColor"
-                  }
-                ],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "texts": {
-                "dataList": [],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              }
-            },
-            "metricType": "serie",
-            "newRule": false,
-            "numberTHData": [
-              {
-                "color": "#ffffffe6",
-                "comparator": "ge",
-                "level": 0,
-                "value": 50
-              },
-              {
-                "color": "#A352CC",
-                "comparator": "ge",
-                "level": 0,
-                "value": 1
-              },
-              {
-                "color": "#3274D9",
-                "comparator": "ge",
-                "level": 0,
-                "value": 15
-              },
-              {
-                "color": "#73BF69",
-                "comparator": "ge",
-                "level": 0,
-                "value": 30
-              },
-              {
-                "color": "#FADE2A",
-                "comparator": "ge",
-                "level": 0,
-                "value": 50
-              },
-              {
-                "color": "#FF9830",
-                "comparator": "ge",
-                "level": 0,
-                "value": 70
-              },
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "ge",
-                "level": 0,
-                "value": 80
-              }
-            ],
-            "order": 1,
-            "overlayIcon": false,
-            "pattern": "name",
-            "rangeData": [],
-            "reduce": true,
-            "refId": "A",
-            "sanitize": false,
-            "stringTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*/"
-              },
-              {
-                "color": "rgba(237, 129, 40, 0.89)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*warning.*/"
-              },
-              {
-                "color": "rgba(50, 172, 45, 0.97)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*(success|ok).*/"
-              }
-            ],
-            "tooltip": false,
-            "tooltipColors": false,
-            "tooltipIframe": "",
-            "tooltipLabel": "",
-            "tooltipOn": "a",
-            "tooltipOnlyIframe": false,
-            "tpDirection": "v",
-            "tpGraph": false,
-            "tpGraphScale": "linear",
-            "tpGraphSize": "100%",
-            "tpGraphType": "line",
-            "tpMetadata": false,
-            "type": "number",
-            "unit": "percent",
-            "valueData": []
-          },
-          {
-            "aggregation": "current",
-            "alias": "sr-sorong.2-new: Bundle-Ether5 Percent",
-            "column": "Time",
-            "dateColumn": "Time",
-            "dateFormat": "YYYY-MM-DD HH:mm:ss",
-            "dateTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "0d"
-              },
-              {
-                "color": "rgba(237, 129, 40, 0.89)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "-1d"
-              },
-              {
-                "color": "rgba(50, 172, 45, 0.97)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "-1w"
-              }
-            ],
-            "decimals": 2,
-            "globalThreshold": false,
-            "gradient": false,
-            "hidden": false,
-            "invert": false,
-            "mappingType": 1,
-            "mapsDat": {
-              "events": {
-                "dataList": [],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "links": {
-                "dataList": [
-                  {
-                    "hidden": false,
-                    "linkOn": "a",
-                    "linkParams": false,
-                    "linkUrl": "https://10.54.68.73/d/GqiSMDA4k/ran-pag-gplyen-1-lan_ran_ran-pag-gplyen-1_ran-pag-gplyen-2_po1_po1_2_fots_collo_direct_tsel_po1_l3-po1?orgId=1",
-                    "pattern": "21"
-                  },
-                  {
-                    "hidden": false,
-                    "linkOn": "a",
-                    "linkParams": false,
-                    "linkUrl": "https://10.54.68.73/d/GqiSMDA4k/ran-pag-gplyen-1-lan_ran_ran-pag-gplyen-1_ran-pag-gplyen-2_po1_po1_2_fots_collo_direct_tsel_po1_l3-po1?orgId=1",
-                    "pattern": "9cHFc5Lmw2Qs3Sorvx_S-52"
-                  }
-                ],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "shapes": {
-                "dataList": [
-                  {
-                    "colorOn": "a",
-                    "hidden": false,
-                    "pattern": "9cHFc5Lmw2Qs3Sorvx_S-52",
-                    "style": "fillColor"
-                  },
-                  {
-                    "colorOn": "n",
-                    "hidden": false,
-                    "pattern": "21",
-                    "style": "fillColor"
-                  }
-                ],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "texts": {
-                "dataList": [
-                  {
-                    "hidden": false,
-                    "pattern": "21",
-                    "textOn": "wmd",
-                    "textPattern": "/received/",
-                    "textReplace": "pattern"
-                  }
-                ],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              }
-            },
-            "metricType": "serie",
-            "newRule": false,
-            "numberTHData": [
-              {
-                "color": "#00000000",
-                "comparator": "ge",
-                "level": 0
-              }
-            ],
-            "order": 2,
-            "overlayIcon": false,
-            "pattern": "114.120.211.227 sr-sorong.2-new: Cisco ASAv: Bundle-Ether5 Percentage out",
-            "rangeData": [],
-            "reduce": true,
-            "refId": "A",
-            "sanitize": false,
-            "stringTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*/"
-              },
-              {
-                "color": "rgba(237, 129, 40, 0.89)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*warning.*/"
-              },
-              {
-                "color": "rgba(50, 172, 45, 0.97)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*(success|ok).*/"
-              }
-            ],
-            "tooltip": true,
-            "tooltipColors": false,
-            "tooltipIframe": "<iframe src=\"https://10.54.68.73/d-solo/GqiSMDA4k/ran-pag-gplyen-1-lan_ran_ran-pag-gplyen-1_ran-pag-gplyen-2_po1_po1_2_fots_collo_direct_tsel_po1_l3-po1?orgId=1&panelId=2\" width=\"600\" height=\"400\" frameborder=\"0\"></iframe>",
-            "tooltipLabel": "",
-            "tooltipOn": "a",
-            "tooltipOnlyIframe": true,
-            "tpDirection": "v",
-            "tpGraph": false,
-            "tpGraphScale": "linear",
-            "tpGraphSize": "100%",
-            "tpGraphType": "line",
-            "tpMetadata": false,
-            "type": "number",
-            "unit": "percent",
-            "valueData": []
-          },
-          {
-            "aggregation": "current",
-            "alias": "sr-sorong.2-new: Bundle-Ether5 Speed",
-            "column": "Time",
-            "dateColumn": "Time",
-            "dateFormat": "YYYY-MM-DD HH:mm:ss",
-            "dateTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "0d"
-              },
-              {
-                "color": "rgba(237, 129, 40, 0.89)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "-1d"
-              },
-              {
-                "color": "rgba(50, 172, 45, 0.97)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "-1w"
-              }
-            ],
-            "decimals": 2,
-            "globalThreshold": false,
-            "gradient": false,
-            "hidden": false,
-            "invert": false,
-            "mappingType": 1,
-            "mapsDat": {
-              "events": {
-                "dataList": [],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "links": {
-                "dataList": [],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "shapes": {
-                "dataList": [],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "texts": {
-                "dataList": [
-                  {
-                    "hidden": false,
-                    "pattern": "21",
-                    "textOn": "wmd",
-                    "textPattern": "/speed/",
-                    "textReplace": "pattern"
-                  }
-                ],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              }
-            },
-            "metricType": "serie",
-            "newRule": false,
-            "numberTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "ge",
-                "level": 0
-              }
-            ],
-            "order": 3,
-            "overlayIcon": false,
-            "pattern": "114.120.211.227 sr-sorong.2-new: Cisco ASAv: Bundle-Ether5 Link speed",
-            "rangeData": [],
-            "reduce": true,
-            "refId": "A",
-            "sanitize": false,
-            "stringTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*/"
-              },
-              {
-                "color": "rgba(237, 129, 40, 0.89)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*warning.*/"
-              },
-              {
-                "color": "rgba(50, 172, 45, 0.97)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*(success|ok).*/"
-              }
-            ],
-            "tooltip": false,
-            "tooltipColors": false,
-            "tooltipIframe": "",
-            "tooltipLabel": "",
-            "tooltipOn": "a",
-            "tooltipOnlyIframe": false,
-            "tpDirection": "v",
-            "tpGraph": false,
-            "tpGraphScale": "linear",
-            "tpGraphSize": "100%",
-            "tpGraphType": "line",
-            "tpMetadata": false,
-            "type": "number",
-            "unit": "decbytes",
-            "valueData": []
-          },
-          {
-            "aggregation": "current",
-            "alias": "sr-sorong.1-new: Bundle-Ether5 Percent",
-            "column": "Time",
-            "dateColumn": "Time",
-            "dateFormat": "YYYY-MM-DD HH:mm:ss",
-            "dateTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "0d"
-              },
-              {
-                "color": "rgba(237, 129, 40, 0.89)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "-1d"
-              },
-              {
-                "color": "rgba(50, 172, 45, 0.97)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "-1w"
-              }
-            ],
-            "decimals": 2,
-            "globalThreshold": false,
-            "gradient": false,
-            "hidden": false,
-            "invert": false,
-            "mappingType": 1,
-            "mapsDat": {
-              "events": {
-                "dataList": [],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "links": {
-                "dataList": [
-                  {
-                    "hidden": false,
-                    "linkOn": "a",
-                    "linkParams": false,
-                    "linkUrl": "https://10.54.68.73/d/GqiSMDA4k/ran-pag-gplyen-1-lan_ran_ran-pag-gplyen-1_ran-pag-gplyen-2_po1_po1_2_fots_collo_direct_tsel_po1_l3-po1?orgId=1",
-                    "pattern": "22"
-                  },
-                  {
-                    "hidden": false,
-                    "linkOn": "a",
-                    "linkParams": false,
-                    "linkUrl": "https://10.54.68.73/d/GqiSMDA4k/ran-pag-gplyen-1-lan_ran_ran-pag-gplyen-1_ran-pag-gplyen-2_po1_po1_2_fots_collo_direct_tsel_po1_l3-po1?orgId=1",
-                    "pattern": "9cHFc5Lmw2Qs3Sorvx_S-57"
-                  }
-                ],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "shapes": {
-                "dataList": [
-                  {
-                    "colorOn": "a",
-                    "hidden": false,
-                    "pattern": "9cHFc5Lmw2Qs3Sorvx_S-57",
-                    "style": "fillColor"
-                  },
-                  {
-                    "colorOn": "n",
-                    "hidden": false,
-                    "pattern": "22",
-                    "style": "fillColor"
-                  }
-                ],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "texts": {
-                "dataList": [
-                  {
-                    "hidden": false,
-                    "pattern": "22",
-                    "textOn": "wmd",
-                    "textPattern": "/received/",
-                    "textReplace": "pattern"
-                  }
-                ],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              }
-            },
-            "metricType": "serie",
-            "newRule": false,
-            "numberTHData": [
-              {
-                "color": "#00000000",
-                "comparator": "ge",
-                "level": 0
-              }
-            ],
-            "order": 4,
-            "overlayIcon": false,
-            "pattern": "114.120.211.216 sr-sorong.1-new: Cisco ASAv: Bundle-Ether5 Percentage out",
-            "rangeData": [],
-            "reduce": true,
-            "refId": "A",
-            "sanitize": false,
-            "stringTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*/"
-              },
-              {
-                "color": "rgba(237, 129, 40, 0.89)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*warning.*/"
-              },
-              {
-                "color": "rgba(50, 172, 45, 0.97)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*(success|ok).*/"
-              }
-            ],
-            "tooltip": true,
-            "tooltipColors": false,
-            "tooltipIframe": "<iframe src=\"https://10.54.68.73/d-solo/GqiSMDA4k/ran-pag-gplyen-1-lan_ran_ran-pag-gplyen-1_ran-pag-gplyen-2_po1_po1_2_fots_collo_direct_tsel_po1_l3-po1?orgId=1&panelId=2\" width=\"600\" height=\"400\" frameborder=\"0\"></iframe>",
-            "tooltipLabel": "",
-            "tooltipOn": "a",
-            "tooltipOnlyIframe": true,
-            "tpDirection": "v",
-            "tpGraph": false,
-            "tpGraphScale": "linear",
-            "tpGraphSize": "100%",
-            "tpGraphType": "line",
-            "tpMetadata": false,
-            "type": "number",
-            "unit": "percent",
-            "valueData": []
-          },
-          {
-            "aggregation": "current",
-            "alias": "sr-sorong.1-new: Bundle-Ether5 Speed",
-            "column": "Time",
-            "dateColumn": "Time",
-            "dateFormat": "YYYY-MM-DD HH:mm:ss",
-            "dateTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "0d"
-              },
-              {
-                "color": "rgba(237, 129, 40, 0.89)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "-1d"
-              },
-              {
-                "color": "rgba(50, 172, 45, 0.97)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "-1w"
-              }
-            ],
-            "decimals": 2,
-            "globalThreshold": false,
-            "gradient": false,
-            "hidden": false,
-            "invert": false,
-            "mappingType": 1,
-            "mapsDat": {
-              "events": {
-                "dataList": [],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "links": {
-                "dataList": [],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "shapes": {
-                "dataList": [],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "texts": {
-                "dataList": [
-                  {
-                    "hidden": false,
-                    "pattern": "22",
-                    "textOn": "wmd",
-                    "textPattern": "/speed/",
-                    "textReplace": "pattern"
-                  }
-                ],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              }
-            },
-            "metricType": "serie",
-            "newRule": false,
-            "numberTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "ge",
-                "level": 0
-              }
-            ],
-            "order": 5,
-            "overlayIcon": false,
-            "pattern": "114.120.211.216 sr-sorong.1-new: Cisco ASAv: Bundle-Ether5 Link speed",
-            "rangeData": [],
-            "reduce": true,
-            "refId": "A",
-            "sanitize": false,
-            "stringTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*/"
-              },
-              {
-                "color": "rgba(237, 129, 40, 0.89)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*warning.*/"
-              },
-              {
-                "color": "rgba(50, 172, 45, 0.97)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*(success|ok).*/"
-              }
-            ],
-            "tooltip": false,
-            "tooltipColors": false,
-            "tooltipIframe": "",
-            "tooltipLabel": "",
-            "tooltipOn": "a",
-            "tooltipOnlyIframe": false,
-            "tpDirection": "v",
-            "tpGraph": false,
-            "tpGraphScale": "linear",
-            "tpGraphSize": "100%",
-            "tpGraphType": "line",
-            "tpMetadata": false,
-            "type": "number",
-            "unit": "decbytes",
-            "valueData": []
-          },
-          {
-            "aggregation": "current",
-            "alias": "sr-sorong.2-new: Bundle-Ether1 Speed",
-            "column": "Time",
-            "dateColumn": "Time",
-            "dateFormat": "YYYY-MM-DD HH:mm:ss",
-            "dateTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "0d"
-              },
-              {
-                "color": "rgba(237, 129, 40, 0.89)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "-1d"
-              },
-              {
-                "color": "rgba(50, 172, 45, 0.97)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "-1w"
-              }
-            ],
-            "decimals": 2,
-            "globalThreshold": false,
-            "gradient": false,
-            "hidden": false,
-            "invert": false,
-            "mappingType": 1,
-            "mapsDat": {
-              "events": {
-                "dataList": [],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "links": {
-                "dataList": [],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "shapes": {
-                "dataList": [],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "texts": {
-                "dataList": [
-                  {
-                    "hidden": false,
-                    "pattern": "16",
-                    "textOn": "wmd",
-                    "textPattern": "/speed/",
-                    "textReplace": "pattern"
-                  }
-                ],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              }
-            },
-            "metricType": "serie",
-            "newRule": false,
-            "numberTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "ge",
-                "level": 0
-              }
-            ],
-            "order": 6,
-            "overlayIcon": false,
-            "pattern": "114.120.211.227 sr-sorong.2-new: Cisco ASAv: Bundle-Ether1 Link speed",
-            "rangeData": [],
-            "reduce": true,
-            "refId": "A",
-            "sanitize": false,
-            "stringTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*/"
-              },
-              {
-                "color": "rgba(237, 129, 40, 0.89)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*warning.*/"
-              },
-              {
-                "color": "rgba(50, 172, 45, 0.97)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*(success|ok).*/"
-              }
-            ],
-            "tooltip": false,
-            "tooltipColors": false,
-            "tooltipIframe": "",
-            "tooltipLabel": "",
-            "tooltipOn": "a",
-            "tooltipOnlyIframe": false,
-            "tpDirection": "v",
-            "tpGraph": false,
-            "tpGraphScale": "linear",
-            "tpGraphSize": "100%",
-            "tpGraphType": "line",
-            "tpMetadata": false,
-            "type": "number",
-            "unit": "decbytes",
-            "valueData": []
-          },
-          {
-            "aggregation": "current",
-            "alias": "sr-sorong.2-new: Bundle-Ether1 Percent",
-            "column": "Time",
-            "dateColumn": "Time",
-            "dateFormat": "YYYY-MM-DD HH:mm:ss",
-            "dateTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "0d"
-              },
-              {
-                "color": "rgba(237, 129, 40, 0.89)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "-1d"
-              },
-              {
-                "color": "rgba(50, 172, 45, 0.97)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "-1w"
-              }
-            ],
-            "decimals": 2,
-            "globalThreshold": false,
-            "gradient": false,
-            "hidden": false,
-            "invert": false,
-            "mappingType": 1,
-            "mapsDat": {
-              "events": {
-                "dataList": [],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "links": {
-                "dataList": [
-                  {
-                    "hidden": false,
-                    "linkOn": "a",
-                    "linkParams": false,
-                    "linkUrl": "https://10.54.68.73/d/GqiSMDA4k/ran-pag-gplyen-1-lan_ran_ran-pag-gplyen-1_ran-pag-gplyen-2_po1_po1_2_fots_collo_direct_tsel_po1_l3-po1?orgId=1",
-                    "pattern": "16"
-                  },
-                  {
-                    "hidden": false,
-                    "linkOn": "a",
-                    "linkParams": false,
-                    "linkUrl": "https://10.54.68.73/d/GqiSMDA4k/ran-pag-gplyen-1-lan_ran_ran-pag-gplyen-1_ran-pag-gplyen-2_po1_po1_2_fots_collo_direct_tsel_po1_l3-po1?orgId=1",
-                    "pattern": "9cHFc5Lmw2Qs3Sorvx_S-49"
-                  }
-                ],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "shapes": {
-                "dataList": [
-                  {
-                    "colorOn": "a",
-                    "hidden": false,
-                    "pattern": "9cHFc5Lmw2Qs3Sorvx_S-49",
-                    "style": "fillColor"
-                  }
-                ],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "texts": {
-                "dataList": [
-                  {
-                    "hidden": false,
-                    "pattern": "16",
-                    "textOn": "wmd",
-                    "textPattern": "/received/",
-                    "textReplace": "pattern"
-                  }
-                ],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              }
-            },
-            "metricType": "serie",
-            "newRule": false,
-            "numberTHData": [
-              {
-                "color": "#00000000",
-                "comparator": "ge",
-                "level": 0
-              }
-            ],
-            "order": 7,
-            "overlayIcon": false,
-            "pattern": "114.120.211.227 sr-sorong.2-new: Cisco ASAv: Bundle-Ether1 Percentage out",
-            "rangeData": [],
-            "reduce": true,
-            "refId": "A",
-            "sanitize": false,
-            "stringTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*/"
-              },
-              {
-                "color": "rgba(237, 129, 40, 0.89)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*warning.*/"
-              },
-              {
-                "color": "rgba(50, 172, 45, 0.97)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*(success|ok).*/"
-              }
-            ],
-            "tooltip": true,
-            "tooltipColors": false,
-            "tooltipIframe": "<iframe src=\"https://10.54.68.73/d-solo/GqiSMDA4k/ran-pag-gplyen-1-lan_ran_ran-pag-gplyen-1_ran-pag-gplyen-2_po1_po1_2_fots_collo_direct_tsel_po1_l3-po1?orgId=1&panelId=2\" width=\"600\" height=\"400\" frameborder=\"0\"></iframe>",
-            "tooltipLabel": "",
-            "tooltipOn": "a",
-            "tooltipOnlyIframe": true,
-            "tpDirection": "v",
-            "tpGraph": false,
-            "tpGraphScale": "linear",
-            "tpGraphSize": "100%",
-            "tpGraphType": "line",
-            "tpMetadata": false,
-            "type": "number",
-            "unit": "percent",
-            "valueData": []
-          },
-          {
-            "aggregation": "current",
-            "alias": "sr-sorong.1-new: Bundle-Ether1 Speed",
-            "column": "Time",
-            "dateColumn": "Time",
-            "dateFormat": "YYYY-MM-DD HH:mm:ss",
-            "dateTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "0d"
-              },
-              {
-                "color": "rgba(237, 129, 40, 0.89)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "-1d"
-              },
-              {
-                "color": "rgba(50, 172, 45, 0.97)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "-1w"
-              }
-            ],
-            "decimals": 2,
-            "globalThreshold": false,
-            "gradient": false,
-            "hidden": false,
-            "invert": false,
-            "mappingType": 1,
-            "mapsDat": {
-              "events": {
-                "dataList": [],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "links": {
-                "dataList": [],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "shapes": {
-                "dataList": [],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "texts": {
-                "dataList": [
-                  {
-                    "hidden": false,
-                    "pattern": "20",
-                    "textOn": "wmd",
-                    "textPattern": "/speed/",
-                    "textReplace": "pattern"
-                  }
-                ],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              }
-            },
-            "metricType": "serie",
-            "newRule": false,
-            "numberTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "ge",
-                "level": 0
-              }
-            ],
-            "order": 8,
-            "overlayIcon": false,
-            "pattern": "114.120.211.216 sr-sorong.1-new: Cisco ASAv: Bundle-Ether1 Link speed",
-            "rangeData": [],
-            "reduce": true,
-            "refId": "A",
-            "sanitize": false,
-            "stringTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*/"
-              },
-              {
-                "color": "rgba(237, 129, 40, 0.89)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*warning.*/"
-              },
-              {
-                "color": "rgba(50, 172, 45, 0.97)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*(success|ok).*/"
-              }
-            ],
-            "tooltip": false,
-            "tooltipColors": false,
-            "tooltipIframe": "",
-            "tooltipLabel": "",
-            "tooltipOn": "a",
-            "tooltipOnlyIframe": false,
-            "tpDirection": "v",
-            "tpGraph": false,
-            "tpGraphScale": "linear",
-            "tpGraphSize": "100%",
-            "tpGraphType": "line",
-            "tpMetadata": false,
-            "type": "number",
-            "unit": "decbytes",
-            "valueData": []
-          },
-          {
-            "aggregation": "current",
-            "alias": "sr-sorong.1-new: Bundle-Ether1 Percent",
-            "column": "Time",
-            "dateColumn": "Time",
-            "dateFormat": "YYYY-MM-DD HH:mm:ss",
-            "dateTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "0d"
-              },
-              {
-                "color": "rgba(237, 129, 40, 0.89)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "-1d"
-              },
-              {
-                "color": "rgba(50, 172, 45, 0.97)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "-1w"
-              }
-            ],
-            "decimals": 2,
-            "globalThreshold": false,
-            "gradient": false,
-            "hidden": false,
-            "invert": false,
-            "mappingType": 1,
-            "mapsDat": {
-              "events": {
-                "dataList": [],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "links": {
-                "dataList": [
-                  {
-                    "hidden": false,
-                    "linkOn": "a",
-                    "linkParams": false,
-                    "linkUrl": "https://10.54.68.73/d/GqiSMDA4k/ran-pag-gplyen-1-lan_ran_ran-pag-gplyen-1_ran-pag-gplyen-2_po1_po1_2_fots_collo_direct_tsel_po1_l3-po1?orgId=1",
-                    "pattern": "20"
-                  },
-                  {
-                    "hidden": false,
-                    "linkOn": "a",
-                    "linkParams": false,
-                    "linkUrl": "https://10.54.68.73/d/GqiSMDA4k/ran-pag-gplyen-1-lan_ran_ran-pag-gplyen-1_ran-pag-gplyen-2_po1_po1_2_fots_collo_direct_tsel_po1_l3-po1?orgId=1",
-                    "pattern": "WufIG9lqQWVk5ltwFjjU-408"
-                  }
-                ],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "shapes": {
-                "dataList": [
-                  {
-                    "colorOn": "a",
-                    "hidden": false,
-                    "pattern": "WufIG9lqQWVk5ltwFjjU-408",
-                    "style": "fillColor"
-                  }
-                ],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "texts": {
-                "dataList": [
-                  {
-                    "hidden": false,
-                    "pattern": "20",
-                    "textOn": "wmd",
-                    "textPattern": "/received/",
-                    "textReplace": "pattern"
-                  }
-                ],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              }
-            },
-            "metricType": "serie",
-            "newRule": false,
-            "numberTHData": [
-              {
-                "color": "#00000000",
-                "comparator": "ge",
-                "level": 0
-              }
-            ],
-            "order": 9,
-            "overlayIcon": false,
-            "pattern": "114.120.211.216 sr-sorong.1-new: Cisco ASAv: Bundle-Ether1 Percentage out",
-            "rangeData": [],
-            "reduce": true,
-            "refId": "A",
-            "sanitize": false,
-            "stringTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*/"
-              },
-              {
-                "color": "rgba(237, 129, 40, 0.89)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*warning.*/"
-              },
-              {
-                "color": "rgba(50, 172, 45, 0.97)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*(success|ok).*/"
-              }
-            ],
-            "tooltip": true,
-            "tooltipColors": false,
-            "tooltipIframe": "<iframe src=\"https://10.54.68.73/d-solo/GqiSMDA4k/ran-pag-gplyen-1-lan_ran_ran-pag-gplyen-1_ran-pag-gplyen-2_po1_po1_2_fots_collo_direct_tsel_po1_l3-po1?orgId=1&panelId=2\" width=\"600\" height=\"400\" frameborder=\"0\"></iframe>",
-            "tooltipLabel": "",
-            "tooltipOn": "a",
-            "tooltipOnlyIframe": true,
-            "tpDirection": "v",
-            "tpGraph": false,
-            "tpGraphScale": "linear",
-            "tpGraphSize": "100%",
-            "tpGraphType": "line",
-            "tpMetadata": false,
-            "type": "number",
-            "unit": "percent",
-            "valueData": []
-          },
-          {
-            "aggregation": "last_time",
-            "alias": "update data",
-            "column": "Time",
-            "dateColumn": "Time",
-            "dateFormat": "YYYY-MM-DD HH:mm:ss",
-            "dateTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "0d"
-              },
-              {
-                "color": "rgba(237, 129, 40, 0.89)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "-1d"
-              },
-              {
-                "color": "rgba(50, 172, 45, 0.97)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "-1w"
-              }
-            ],
-            "decimals": 2,
-            "globalThreshold": false,
-            "gradient": false,
-            "hidden": false,
-            "invert": false,
-            "mappingType": 1,
-            "mapsDat": {
-              "events": {
-                "dataList": [],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "links": {
-                "dataList": [],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "shapes": {
-                "dataList": [],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "texts": {
-                "dataList": [
-                  {
-                    "hidden": false,
-                    "pattern": "73",
-                    "textOn": "wmd",
-                    "textPattern": "/dateinfo/",
-                    "textReplace": "pattern"
-                  }
-                ],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              }
-            },
-            "metricType": "serie",
-            "newRule": false,
-            "numberTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "ge",
-                "level": 0
-              }
-            ],
-            "order": 10,
-            "overlayIcon": false,
-            "pattern": "/.*/",
-            "rangeData": [],
-            "reduce": true,
-            "refId": "A",
-            "sanitize": false,
-            "stringTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*/"
-              },
-              {
-                "color": "rgba(237, 129, 40, 0.89)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*warning.*/"
-              },
-              {
-                "color": "rgba(50, 172, 45, 0.97)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*(success|ok).*/"
-              }
-            ],
-            "tooltip": false,
-            "tooltipColors": false,
-            "tooltipIframe": "",
-            "tooltipLabel": "",
-            "tooltipOn": "a",
-            "tooltipOnlyIframe": false,
-            "tpDirection": "v",
-            "tpGraph": false,
-            "tpGraphScale": "linear",
-            "tpGraphSize": "100%",
-            "tpGraphType": "line",
-            "tpMetadata": false,
-            "type": "date",
-            "unit": "short",
-            "valueData": []
-          },
-          {
-            "aggregation": "current",
-            "alias": "update time",
-            "column": "Time",
-            "dateColumn": "Time",
-            "dateFormat": "YYYY-MM-DD HH:mm:ss",
-            "dateTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "0d"
-              },
-              {
-                "color": "rgba(237, 129, 40, 0.89)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "-1d"
-              },
-              {
-                "color": "rgba(50, 172, 45, 0.97)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "-1w"
-              }
-            ],
-            "decimals": 2,
-            "globalThreshold": false,
-            "gradient": false,
-            "hidden": false,
-            "invert": false,
-            "mappingType": 1,
-            "mapsDat": {
-              "events": {
-                "dataList": [],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "links": {
-                "dataList": [],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "shapes": {
-                "dataList": [],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "texts": {
-                "dataList": [
-                  {
-                    "hidden": false,
-                    "pattern": "70",
-                    "textOn": "wmd",
-                    "textPattern": "/dateinfo/",
-                    "textReplace": "pattern"
-                  }
-                ],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              }
-            },
-            "metricType": "serie",
-            "newRule": false,
-            "numberTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "ge",
-                "level": 0
-              }
-            ],
-            "order": 11,
-            "overlayIcon": false,
-            "pattern": "updated",
-            "rangeData": [],
-            "reduce": true,
-            "refId": "A",
-            "sanitize": false,
-            "stringTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*/"
-              },
-              {
-                "color": "rgba(237, 129, 40, 0.89)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*warning.*/"
-              },
-              {
-                "color": "rgba(50, 172, 45, 0.97)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*(success|ok).*/"
-              }
-            ],
-            "tooltip": false,
-            "tooltipColors": false,
-            "tooltipIframe": "",
-            "tooltipLabel": "",
-            "tooltipOn": "a",
-            "tooltipOnlyIframe": false,
-            "tpDirection": "v",
-            "tpGraph": false,
-            "tpGraphScale": "linear",
-            "tpGraphSize": "100%",
-            "tpGraphType": "line",
-            "tpMetadata": false,
-            "type": "date",
-            "unit": "short",
-            "valueData": []
-          },
-          {
-            "aggregation": "current",
-            "alias": "update name",
-            "column": "Time",
-            "dateColumn": "Time",
-            "dateFormat": "YYYY-MM-DD HH:mm:ss",
-            "dateTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "0d"
-              },
-              {
-                "color": "rgba(237, 129, 40, 0.89)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "-1d"
-              },
-              {
-                "color": "rgba(50, 172, 45, 0.97)",
-                "comparator": "ge",
-                "level": 0,
-                "value": "-1w"
-              }
-            ],
-            "decimals": 2,
-            "globalThreshold": false,
-            "gradient": false,
-            "hidden": false,
-            "invert": false,
-            "mappingType": 1,
-            "mapsDat": {
-              "events": {
-                "dataList": [],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "links": {
-                "dataList": [],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "shapes": {
-                "dataList": [],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              },
-              "texts": {
-                "dataList": [
-                  {
-                    "hidden": false,
-                    "pattern": "70",
-                    "textOn": "wmd",
-                    "textPattern": "/name/",
-                    "textReplace": "pattern"
-                  }
-                ],
-                "options": {
-                  "enableRegEx": true,
-                  "identByProp": "id",
-                  "metadata": ""
-                }
-              }
-            },
-            "metricType": "serie",
-            "newRule": false,
-            "numberTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "ge",
-                "level": 0
-              },
-              {
-                "color": "rgba(237, 129, 40, 0.89)",
-                "comparator": "ge",
-                "level": 0,
-                "value": 50
-              },
-              {
-                "color": "rgba(50, 172, 45, 0.97)",
-                "comparator": "ge",
-                "level": 0,
-                "value": 80
-              }
-            ],
-            "order": 12,
-            "overlayIcon": false,
-            "pattern": "name",
-            "rangeData": [],
-            "reduce": true,
-            "refId": "A",
-            "sanitize": false,
-            "stringTHData": [
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "comparator": "eq",
-                "level": 0,
-                "value": "/.*/"
-              }
-            ],
-            "tooltip": false,
-            "tooltipColors": false,
-            "tooltipIframe": "",
-            "tooltipLabel": "",
-            "tooltipOn": "a",
-            "tooltipOnlyIframe": false,
-            "tpDirection": "v",
-            "tpGraph": false,
-            "tpGraphScale": "linear",
-            "tpGraphSize": "100%",
-            "tpGraphType": "line",
-            "tpMetadata": false,
-            "type": "string",
-            "unit": "short",
-            "valueData": []
-          }
-        ]
+      "id": null,
+      "interval": "5m",
+      "options": {
+        "legend": {
+          "calcs": [
+            "lastNotNull",
+            "mean",
+            "max"
+          ],
+          "displayMode": "table",
+          "placement": "bottom"
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
       },
       "targets": [
         {
@@ -1742,232 +114,38 @@
           },
           "datasource": {
             "type": "alexanderzobnin-zabbix-datasource",
-            "uid": "gHQN77VVz"
+            "uid": "4YsZQV44z"
           },
-          "functions": [],
-          "group": {
-            "filter": "CBTA"
-          },
-          "hide": false,
-          "host": {
-            "filter": "10.0.90.30 ahz-dns1.telkomsel.co.id"
-          },
-          "item": {
-            "filter": "Temperature"
-          },
-          "itemTag": {
-            "filter": "component: temperature"
-          },
-          "options": {
-            "disableDataAlignment": false,
-            "showDisabledItems": false,
-            "skipEmptyValues": false,
-            "useZabbixValueMapping": false
-          },
-          "proxy": {
-            "filter": ""
-          },
-          "queryType": "0",
-          "refId": "A",
-          "resultFormat": "time_series",
-          "table": {
-            "skipEmptyValues": false
-          },
-          "tags": {
-            "filter": ""
-          },
-          "trigger": {
-            "filter": ""
-          },
-          "triggers": {
-            "acknowledged": 2,
-            "count": true,
-            "minSeverity": 3
-          }
-        },
-        {
-          "application": {
-            "filter": ""
-          },
-          "datasource": {
-            "type": "alexanderzobnin-zabbix-datasource",
-            "uid": "gHQN77VVz"
-          },
-          "functions": [],
-          "group": {
-            "filter": "Puma/Cisco"
-          },
-          "hide": false,
-          "host": {
-            "filter": "114.120.211.216 sr-sorong.1-new"
-          },
-          "item": {
-            "filter": "/.*speed|.*Percentage out/"
-          },
-          "itemTag": {
-            "filter": "/interface.*(Bundle-Ether1|Bundle-Ether5)$/"
-          },
-          "options": {
-            "disableDataAlignment": false,
-            "showDisabledItems": false,
-            "skipEmptyValues": false,
-            "useZabbixValueMapping": false
-          },
-          "proxy": {
-            "filter": ""
-          },
-          "queryType": "0",
-          "refId": "114.120.211.216 sr-sorong.1-new",
-          "resultFormat": "time_series",
-          "table": {
-            "skipEmptyValues": false
-          },
-          "tags": {
-            "filter": ""
-          },
-          "trigger": {
-            "filter": ""
-          },
-          "triggers": {
-            "acknowledged": 2,
-            "count": true,
-            "minSeverity": 3
-          }
-        },
-        {
-          "application": {
-            "filter": ""
-          },
-          "datasource": {
-            "type": "alexanderzobnin-zabbix-datasource",
-            "uid": "gHQN77VVz"
-          },
-          "functions": [],
-          "group": {
-            "filter": "Puma/Cisco"
-          },
-          "hide": false,
-          "host": {
-            "filter": "114.120.211.227 sr-sorong.2-new"
-          },
-          "item": {
-            "filter": "/.*speed|.*Percentage out/"
-          },
-          "itemTag": {
-            "filter": "/interface.*(Bundle-Ether1|Bundle-Ether5)$/"
-          },
-          "options": {
-            "disableDataAlignment": false,
-            "showDisabledItems": false,
-            "skipEmptyValues": false,
-            "useZabbixValueMapping": false
-          },
-          "proxy": {
-            "filter": ""
-          },
-          "queryType": "0",
-          "refId": "114.120.211.227 sr-sorong.2-new",
-          "resultFormat": "time_series",
-          "table": {
-            "skipEmptyValues": false
-          },
-          "tags": {
-            "filter": ""
-          },
-          "trigger": {
-            "filter": ""
-          },
-          "triggers": {
-            "acknowledged": 2,
-            "count": true,
-            "minSeverity": 3
-          }
-        },
-        {
-          "datasource": {
-            "uid": "P4eTw6hVz"
-          },
-          "format": "time_series",
-          "group": [],
-          "hide": false,
-          "metricColumn": "none",
-          "rawQuery": true,
-          "rawSql": "SELECT \n\t\"time\",\n\tupdated\nFROM \n\t(SELECT\n\t  updated AS \"time\",\n\t  extract(epoch from updated - interval '7 hours') AS utc_time,\n\t  to_char(updated,'yyyy-mm-dd HH24:MI') as updated\n\tFROM dashboard\n\tWHERE title = 'test generate'\n\t) AS fd\nORDER BY 1",
-          "refId": "dateinfo",
-          "select": [
-            [
-              {
-                "params": [
-                  "value_double"
-                ],
-                "type": "column"
-              }
-            ]
-          ],
-          "table": "test_data",
-          "timeColumn": "time_date_time",
-          "timeColumnType": "timestamp",
-          "where": [
+          "functions": [
             {
-              "name": "$__timeFilter",
-              "params": [],
-              "type": "macro"
-            }
-          ]
-        },
-        {
-          "datasource": {
-            "uid": "P4eTw6hVz"
-          },
-          "format": "time_series",
-          "group": [],
-          "hide": false,
-          "metricColumn": "none",
-          "rawQuery": true,
-          "rawSql": "SELECT \n\t\"time\",\n\tu.\"name\" AS \"name\" \nFROM \n\t(SELECT \n\t\tupdated AS \"time\",\n\t\textract(epoch from updated - interval '7 hours') AS utc_time,\n\t\tupdated_by\n\tFROM dashboard \n\tWHERE title = 'test generate'\n\t) AS fd\nLEFT JOIN \"user\" as u\n  ON fd.updated_by = u.id\nORDER BY 1",
-          "refId": "update name",
-          "select": [
-            [
-              {
+              "def": {
+                "category": "Alias",
+                "defaultParams": [],
+                "name": "setAlias",
                 "params": [
-                  "value_double"
-                ],
-                "type": "column"
-              }
-            ]
-          ],
-          "table": "test_data",
-          "timeColumn": "time_date_time",
-          "timeColumnType": "timestamp",
-          "where": [
-            {
-              "name": "$__timeFilter",
-              "params": [],
-              "type": "macro"
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "Outbound"
+              ],
+              "text": "setAlias(Outbound)"
             }
-          ]
-        },
-        {
-          "application": {
-            "filter": ""
-          },
-          "datasource": {
-            "type": "alexanderzobnin-zabbix-datasource",
-            "uid": "gHQN77VVz"
-          },
-          "functions": [],
+          ],
           "group": {
-            "filter": "CBTA"
+            "filter": "Jateng/Cisco"
           },
-          "hide": false,
           "host": {
-            "filter": "10.0.90.30 ahz-dns1.telkomsel.co.id"
+            "filter": "172.16.145.7 cps-gombel-1"
           },
           "item": {
-            "filter": "Temperature"
+            "filter": "Cisco ASAv: port-channel30 Outgoing traffic"
           },
           "itemTag": {
-            "filter": "component: temperature"
+            "filter": "description: lan_cps-gombel-1_r4.gbl.pe-mobile.1_cps_20g_po30_be30"
           },
           "options": {
             "disableDataAlignment": false,
@@ -1979,7 +157,7 @@
             "filter": ""
           },
           "queryType": "0",
-          "refId": "handle_bug",
+          "refId": "Outbound",
           "resultFormat": "time_series",
           "table": {
             "skipEmptyValues": false
@@ -2002,21 +180,39 @@
           },
           "datasource": {
             "type": "alexanderzobnin-zabbix-datasource",
-            "uid": "gHQN77VVz"
+            "uid": "4YsZQV44z"
           },
-          "functions": [],
+          "functions": [
+            {
+              "def": {
+                "category": "Alias",
+                "defaultParams": [],
+                "name": "setAlias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "Inbound"
+              ],
+              "text": "setAlias(Inbound)"
+            }
+          ],
           "group": {
-            "filter": "Puma/Cisco"
+            "filter": "Jateng/Cisco"
           },
           "hide": false,
           "host": {
-            "filter": "114.120.211.216 sr-sorong.1-new"
+            "filter": "172.16.145.7 cps-gombel-1"
           },
           "item": {
-            "filter": "/.*speed|.*Percentage out/"
+            "filter": "Cisco ASAv: port-channel30 Incoming traffic"
           },
           "itemTag": {
-            "filter": "/interface.*(Bundle-Ether1|Bundle-Ether5)$/"
+            "filter": "description: lan_cps-gombel-1_r4.gbl.pe-mobile.1_cps_20g_po30_be30"
           },
           "options": {
             "disableDataAlignment": false,
@@ -2028,56 +224,7 @@
             "filter": ""
           },
           "queryType": "0",
-          "refId": "114.120.211.216 sr-sorong.1-new",
-          "resultFormat": "time_series",
-          "table": {
-            "skipEmptyValues": false
-          },
-          "tags": {
-            "filter": ""
-          },
-          "trigger": {
-            "filter": ""
-          },
-          "triggers": {
-            "acknowledged": 2,
-            "count": true,
-            "minSeverity": 3
-          }
-        },
-        {
-          "application": {
-            "filter": ""
-          },
-          "datasource": {
-            "type": "alexanderzobnin-zabbix-datasource",
-            "uid": "gHQN77VVz"
-          },
-          "functions": [],
-          "group": {
-            "filter": "Puma/Cisco"
-          },
-          "hide": false,
-          "host": {
-            "filter": "114.120.211.227 sr-sorong.2-new"
-          },
-          "item": {
-            "filter": "/.*speed|.*Percentage out/"
-          },
-          "itemTag": {
-            "filter": "/interface.*(Bundle-Ether1|Bundle-Ether5)$/"
-          },
-          "options": {
-            "disableDataAlignment": false,
-            "showDisabledItems": false,
-            "skipEmptyValues": false,
-            "useZabbixValueMapping": false
-          },
-          "proxy": {
-            "filter": ""
-          },
-          "queryType": "0",
-          "refId": "114.120.211.227 sr-sorong.2-new",
+          "refId": "Inbound",
           "resultFormat": "time_series",
           "table": {
             "skipEmptyValues": false
@@ -2095,10 +242,747 @@
           }
         }
       ],
-      "title": "test generate",
-      "type": "agenty-flowcharting-panel",
-      "valueName": "current",
-      "version": "1.0.0d"
+      "timeFrom": "24h",
+      "title": "Daily (5 Minute Average) ran-agg-gombel.3 - lan_core_ran-agg-gombel.3_r4.gbl.pe-mobile.1_be10_be10_500_fots_collo_direct_tsel_be10_l3 - Bundle-Ether10",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "alexanderzobnin-zabbix-datasource",
+        "uid": "gHQN77VVz"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 9,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "deckbytes"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Outbound"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "dark-blue",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Inbound"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "dark-green",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 24,
+        "x": 0,
+        "y": 9
+      },
+      "id": null,
+      "interval": "30m",
+      "options": {
+        "legend": {
+          "calcs": [
+            "lastNotNull",
+            "mean",
+            "max"
+          ],
+          "displayMode": "table",
+          "placement": "bottom"
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "datasource": {
+            "type": "alexanderzobnin-zabbix-datasource",
+            "uid": "4YsZQV44z"
+          },
+          "functions": [
+            {
+              "def": {
+                "category": "Alias",
+                "defaultParams": [],
+                "name": "setAlias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "Outbound"
+              ],
+              "text": "setAlias(Outbound)"
+            }
+          ],
+          "group": {
+            "filter": "Jateng/Cisco"
+          },
+          "host": {
+            "filter": "172.16.145.7 cps-gombel-1"
+          },
+          "item": {
+            "filter": "Cisco ASAv: port-channel30 Outgoing traffic"
+          },
+          "itemTag": {
+            "filter": "description: lan_cps-gombel-1_r4.gbl.pe-mobile.1_cps_20g_po30_be30"
+          },
+          "options": {
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "Outbound",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "trigger": {
+            "filter": ""
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        },
+        {
+          "application": {
+            "filter": ""
+          },
+          "datasource": {
+            "type": "alexanderzobnin-zabbix-datasource",
+            "uid": "4YsZQV44z"
+          },
+          "functions": [
+            {
+              "def": {
+                "category": "Alias",
+                "defaultParams": [],
+                "name": "setAlias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "Inbound"
+              ],
+              "text": "setAlias(Inbound)"
+            }
+          ],
+          "group": {
+            "filter": "Jateng/Cisco"
+          },
+          "hide": false,
+          "host": {
+            "filter": "172.16.145.7 cps-gombel-1"
+          },
+          "item": {
+            "filter": "Cisco ASAv: port-channel30 Incoming traffic"
+          },
+          "itemTag": {
+            "filter": "description: lan_cps-gombel-1_r4.gbl.pe-mobile.1_cps_20g_po30_be30"
+          },
+          "options": {
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "Inbound",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "trigger": {
+            "filter": ""
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "timeFrom": "7d",
+      "title": "Weekly (30 Minute Average) ran-agg-gombel.3 - lan_core_ran-agg-gombel.3_r4.gbl.pe-mobile.1_be10_be10_500_fots_collo_direct_tsel_be10_l3 - Bundle-Ether10",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "alexanderzobnin-zabbix-datasource",
+        "uid": "gHQN77VVz"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 9,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "deckbytes"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Outbound"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "dark-blue",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Inbound"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "dark-green",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 24,
+        "x": 0,
+        "y": 18
+      },
+      "id": null,
+      "interval": "2h",
+      "options": {
+        "legend": {
+          "calcs": [
+            "lastNotNull",
+            "mean",
+            "max"
+          ],
+          "displayMode": "table",
+          "placement": "bottom"
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "datasource": {
+            "type": "alexanderzobnin-zabbix-datasource",
+            "uid": "4YsZQV44z"
+          },
+          "functions": [
+            {
+              "def": {
+                "category": "Alias",
+                "defaultParams": [],
+                "name": "setAlias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "Outbound"
+              ],
+              "text": "setAlias(Outbound)"
+            }
+          ],
+          "group": {
+            "filter": "Jateng/Cisco"
+          },
+          "host": {
+            "filter": "172.16.145.7 cps-gombel-1"
+          },
+          "item": {
+            "filter": "Cisco ASAv: port-channel30 Outgoing traffic"
+          },
+          "itemTag": {
+            "filter": "description: lan_cps-gombel-1_r4.gbl.pe-mobile.1_cps_20g_po30_be30"
+          },
+          "options": {
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "Outbound",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "trigger": {
+            "filter": ""
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        },
+        {
+          "application": {
+            "filter": ""
+          },
+          "datasource": {
+            "type": "alexanderzobnin-zabbix-datasource",
+            "uid": "4YsZQV44z"
+          },
+          "functions": [
+            {
+              "def": {
+                "category": "Alias",
+                "defaultParams": [],
+                "name": "setAlias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "Inbound"
+              ],
+              "text": "setAlias(Inbound)"
+            }
+          ],
+          "group": {
+            "filter": "Jateng/Cisco"
+          },
+          "hide": false,
+          "host": {
+            "filter": "172.16.145.7 cps-gombel-1"
+          },
+          "item": {
+            "filter": "Cisco ASAv: port-channel30 Incoming traffic"
+          },
+          "itemTag": {
+            "filter": "description: lan_cps-gombel-1_r4.gbl.pe-mobile.1_cps_20g_po30_be30"
+          },
+          "options": {
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "Inbound",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "trigger": {
+            "filter": ""
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "timeFrom": "120d",
+      "title": "Monthly (2 Hours Average) ran-agg-gombel.3 - lan_core_ran-agg-gombel.3_r4.gbl.pe-mobile.1_be10_be10_500_fots_collo_direct_tsel_be10_l3 - Bundle-Ether10",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "alexanderzobnin-zabbix-datasource",
+        "uid": "gHQN77VVz"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 9,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "deckbytes"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Outbound"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "dark-blue",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Inbound"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "dark-green",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 27,
+        "x": 0,
+        "y": 27
+      },
+      "id": null,
+      "interval": "1d",
+      "options": {
+        "legend": {
+          "calcs": [
+            "lastNotNull",
+            "mean",
+            "max"
+          ],
+          "displayMode": "table",
+          "placement": "bottom"
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "datasource": {
+            "type": "alexanderzobnin-zabbix-datasource",
+            "uid": "4YsZQV44z"
+          },
+          "functions": [
+            {
+              "def": {
+                "category": "Alias",
+                "defaultParams": [],
+                "name": "setAlias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "Outbound"
+              ],
+              "text": "setAlias(Outbound)"
+            }
+          ],
+          "group": {
+            "filter": "Jateng/Cisco"
+          },
+          "host": {
+            "filter": "172.16.145.7 cps-gombel-1"
+          },
+          "item": {
+            "filter": "Cisco ASAv: port-channel30 Outgoing traffic"
+          },
+          "itemTag": {
+            "filter": "description: lan_cps-gombel-1_r4.gbl.pe-mobile.1_cps_20g_po30_be30"
+          },
+          "options": {
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "Outbound",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "trigger": {
+            "filter": ""
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        },
+        {
+          "application": {
+            "filter": ""
+          },
+          "datasource": {
+            "type": "alexanderzobnin-zabbix-datasource",
+            "uid": "4YsZQV44z"
+          },
+          "functions": [
+            {
+              "def": {
+                "category": "Alias",
+                "defaultParams": [],
+                "name": "setAlias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "Inbound"
+              ],
+              "text": "setAlias(Inbound)"
+            }
+          ],
+          "group": {
+            "filter": "Jateng/Cisco"
+          },
+          "hide": false,
+          "host": {
+            "filter": "172.16.145.7 cps-gombel-1"
+          },
+          "item": {
+            "filter": "Cisco ASAv: port-channel30 Incoming traffic"
+          },
+          "itemTag": {
+            "filter": "description: lan_cps-gombel-1_r4.gbl.pe-mobile.1_cps_20g_po30_be30"
+          },
+          "options": {
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "Inbound",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "trigger": {
+            "filter": ""
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "timeFrom": "360d",
+      "title": "Yearly (1 Day Average) ran-agg-gombel.3 - lan_core_ran-agg-gombel.3_r4.gbl.pe-mobile.1_be10_be10_500_fots_collo_direct_tsel_be10_l3 - Bundle-Ether10",
+      "type": "timeseries"
     }
   ],
   "refresh": "",
@@ -2109,13 +993,11 @@
     "list": []
   },
   "time": {
-    "from": "now-6h",
+    "from": "now-5m",
     "to": "now"
   },
-  "timepicker": {},
-  "timezone": "",
-  "title": "test generate",
-  "uid": "xrlxyp1Vz",
-  "version": 24,
-  "weekStart": ""
+  "timepicker": {
+    "hidden": true
+  },
+  "timezone": "Asia/Jakarta"
 }
