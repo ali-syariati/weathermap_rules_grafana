@@ -168,7 +168,14 @@ template_rules_speed = {
                     "textOn": "wmd",
                     "textPattern": "/speed/",
                     "textReplace": "pattern",
-                }
+                },
+                {
+                    "hidden": False,
+                    "pattern": "qepA3EpPfLnxbVJNl7Fr-516",
+                    "textOn": "wmd",
+                    "textPattern": "/speed/",
+                    "textReplace": "pattern",
+                },
             ],
             "options": {"enableRegEx": True, "identByProp": "id", "metadata": ""},
         },

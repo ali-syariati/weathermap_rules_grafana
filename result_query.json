@@ -58,17 +58,17 @@
     },
     "functions": [],
     "group": {
-      "filter": "Puma/Cisco"
+      "filter": "Jateng/Cisco"
     },
     "hide": false,
     "host": {
-      "filter": "114.120.211.216 sr-sorong.1-new"
+      "filter": "221.132.196.60 ran-agg-gombel.4"
     },
     "item": {
       "filter": "/.*speed|.*Percentage out/"
     },
     "itemTag": {
-      "filter": "/interface.*(Bundle-Ether1|Bundle-Ether5)$/"
+      "filter": "/description.*(be1_be1|te0/6/0/3_te0/0/0/7|te0/6/0/6_te0/7/0/5|be10_be10).*/"
     },
     "options": {
       "disableDataAlignment": false,
@@ -80,56 +80,7 @@
       "filter": ""
     },
     "queryType": "0",
-    "refId": "114.120.211.216 sr-sorong.1-new",
-    "resultFormat": "time_series",
-    "table": {
-      "skipEmptyValues": false
-    },
-    "tags": {
-      "filter": ""
-    },
-    "trigger": {
-      "filter": ""
-    },
-    "triggers": {
-      "acknowledged": 2,
-      "count": true,
-      "minSeverity": 3
-    }
-  },
-  {
-    "application": {
-      "filter": ""
-    },
-    "datasource": {
-      "type": "alexanderzobnin-zabbix-datasource",
-      "uid": "gHQN77VVz"
-    },
-    "functions": [],
-    "group": {
-      "filter": "Puma/Cisco"
-    },
-    "hide": false,
-    "host": {
-      "filter": "114.120.211.227 sr-sorong.2-new"
-    },
-    "item": {
-      "filter": "/.*speed|.*Percentage out/"
-    },
-    "itemTag": {
-      "filter": "/interface.*(Bundle-Ether1|Bundle-Ether5)$/"
-    },
-    "options": {
-      "disableDataAlignment": false,
-      "showDisabledItems": false,
-      "skipEmptyValues": false,
-      "useZabbixValueMapping": false
-    },
-    "proxy": {
-      "filter": ""
-    },
-    "queryType": "0",
-    "refId": "114.120.211.227 sr-sorong.2-new",
+    "refId": "221.132.196.60 ran-agg-gombel.4",
     "resultFormat": "time_series",
     "table": {
       "skipEmptyValues": false

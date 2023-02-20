@@ -1,30 +1,19 @@
 [
   {
-    "arrow_id": "9cHFc5Lmw2Qs3Sorvx_S-52",
-    "label_id": "21",
-    "alias": "",
-    "pattern_percentage": "114.120.211.227 sr-sorong.2-new: Cisco ASAv: Bundle-Ether5 Percentage out",
-    "pattern_speed": "114.120.211.227 sr-sorong.2-new: Cisco ASAv: Bundle-Ether5 Link speed",
-    "iframe": "<iframe src=\"https://10.54.68.73/d-solo/GqiSMDA4k/ran-pag-gplyen-1-lan_ran_ran-pag-gplyen-1_ran-pag-gplyen-2_po1_po1_2_fots_collo_direct_tsel_po1_l3-po1?orgId=1&panelId=2\" width=\"600\" height=\"400\" frameborder=\"0\"></iframe>",
-    "link_url": "https://10.54.68.73/d/GqiSMDA4k/ran-pag-gplyen-1-lan_ran_ran-pag-gplyen-1_ran-pag-gplyen-2_po1_po1_2_fots_collo_direct_tsel_po1_l3-po1?orgId=1",
+    "arrow_id_out": "TxjzhaCzm2o5YE0xTeu6-104",
+    "label_id_out": "42",
+    "arrow_id_in": "TxjzhaCzm2o5YE0xTeu6-106",
+    "label_id_in": "45",
+    "alias": "ran-agg-gombel.4 Bundle-Ether10",
+    "pattern_percentage_out": "221.132.196.60 ran-agg-gombel.4: Cisco ASAv: Bundle-Ether10 Percentage out",
+    "pattern_percentage_in": "221.132.196.60 ran-agg-gombel.4: Cisco ASAv: Bundle-Ether10 Percentage in",
+    "pattern_speed": "221.132.196.60 ran-agg-gombel.4: Cisco ASAv: Bundle-Ether10 Link speed",
+    "iframe": "<iframe src=\"https://10.54.68.73/d-solo/mj6GU114z/ran-agg-gombel-4-lan_core_ran-agg-gombel-4_r4-gbl-pe-mobile-2_be10_be10_500_fots_collo_direct_tsel_be10_l3-bundle-ether10?orgId=1&panelId=1\" width=\"600\" height=\"400\" frameborder=\"0\"></iframe>",
+    "link_url": "https://10.54.68.73/d/mj6GU114z/ran-agg-gombel-4-lan_core_ran-agg-gombel-4_r4-gbl-pe-mobile-2_be10_be10_500_fots_collo_direct_tsel_be10_l3-bundle-ether10?orgId=1",
 
-    "group_filter": "Puma/Cisco",
-    "item_tag_filter": "interface: Bundle-Ether5",
-    "id_tag_filter": "Bundle-Ether5",
-    "item_filter": "/.*speed|.*Percentage out/"
-  },
-  {
-    "arrow_id": "9cHFc5Lmw2Qs3Sorvx_S-57",
-    "label_id": "22",
-    "alias": "",
-    "pattern_percentage": "114.120.211.216 sr-sorong.1-new: Cisco ASAv: Bundle-Ether5 Percentage out",
-    "pattern_speed": "114.120.211.216 sr-sorong.1-new: Cisco ASAv: Bundle-Ether5 Link speed",
-    "iframe": "<iframe src=\"https://10.54.68.73/d-solo/GqiSMDA4k/ran-pag-gplyen-1-lan_ran_ran-pag-gplyen-1_ran-pag-gplyen-2_po1_po1_2_fots_collo_direct_tsel_po1_l3-po1?orgId=1&panelId=2\" width=\"600\" height=\"400\" frameborder=\"0\"></iframe>",
-    "link_url": "https://10.54.68.73/d/GqiSMDA4k/ran-pag-gplyen-1-lan_ran_ran-pag-gplyen-1_ran-pag-gplyen-2_po1_po1_2_fots_collo_direct_tsel_po1_l3-po1?orgId=1",
-
-    "group_filter": "Puma/Cisco",
-    "item_tag_filter": "interface: Bundle-Ether5",
-    "id_tag_filter": "Bundle-Ether5",
-    "item_filter": "/.*speed|.*Percentage out/"
+    "group_filter": "Jateng/Cisco",
+    "item_tag_filter": "description: lan_core_ran-agg-gombel.4_r4.gbl.pe-mobile.2_be10_be10_500_fots_collo_direct_tsel_be10_l3",
+    "id_tag_filter": "be10_be10",
+    "item_filter": "/.*speed|.*Percentage/"
   }
 ]
