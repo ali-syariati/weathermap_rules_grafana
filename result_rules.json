@@ -1,7 +1,7 @@
 [
   {
     "aggregation": "current",
-    "alias": "sr-sorong.2-new: Bundle-Ether5 Speed",
+    "alias": "ran-agg-gombel.4 Bundle-Ether10 Speed",
     "column": "Time",
     "dateColumn": "Time",
     "dateFormat": "YYYY-MM-DD HH:mm:ss",
@@ -60,7 +60,14 @@
         "dataList": [
           {
             "hidden": false,
-            "pattern": "21",
+            "pattern": "42",
+            "textOn": "wmd",
+            "textPattern": "/speed/",
+            "textReplace": "pattern"
+          },
+          {
+            "hidden": false,
+            "pattern": "45",
             "textOn": "wmd",
             "textPattern": "/speed/",
             "textReplace": "pattern"
@@ -82,9 +89,9 @@
         "level": 0
       }
     ],
-    "order": 2,
+    "order": 84,
     "overlayIcon": false,
-    "pattern": "114.120.211.227 sr-sorong.2-new: Cisco ASAv: Bundle-Ether5 Link speed",
+    "pattern": "221.132.196.60 ran-agg-gombel.4: Cisco ASAv: Bundle-Ether10 Link speed",
     "rangeData": [],
     "reduce": true,
     "refId": "A",
@@ -127,7 +134,7 @@
   },
   {
     "aggregation": "current",
-    "alias": "sr-sorong.2-new: Bundle-Ether5 Percent",
+    "alias": "ran-agg-gombel.4 Bundle-Ether10 Percent Out",
     "column": "Time",
     "dateColumn": "Time",
     "dateFormat": "YYYY-MM-DD HH:mm:ss",
@@ -172,15 +179,15 @@
             "hidden": false,
             "linkOn": "a",
             "linkParams": false,
-            "linkUrl": "https://10.54.68.73/d/GqiSMDA4k/ran-pag-gplyen-1-lan_ran_ran-pag-gplyen-1_ran-pag-gplyen-2_po1_po1_2_fots_collo_direct_tsel_po1_l3-po1?orgId=1",
-            "pattern": "21"
+            "linkUrl": "https://10.54.68.73/d/mj6GU114z/ran-agg-gombel-4-lan_core_ran-agg-gombel-4_r4-gbl-pe-mobile-2_be10_be10_500_fots_collo_direct_tsel_be10_l3-bundle-ether10?orgId=1",
+            "pattern": "42"
           },
           {
             "hidden": false,
             "linkOn": "a",
             "linkParams": false,
-            "linkUrl": "https://10.54.68.73/d/GqiSMDA4k/ran-pag-gplyen-1-lan_ran_ran-pag-gplyen-1_ran-pag-gplyen-2_po1_po1_2_fots_collo_direct_tsel_po1_l3-po1?orgId=1",
-            "pattern": "9cHFc5Lmw2Qs3Sorvx_S-52"
+            "linkUrl": "https://10.54.68.73/d/mj6GU114z/ran-agg-gombel-4-lan_core_ran-agg-gombel-4_r4-gbl-pe-mobile-2_be10_be10_500_fots_collo_direct_tsel_be10_l3-bundle-ether10?orgId=1",
+            "pattern": "TxjzhaCzm2o5YE0xTeu6-104"
           }
         ],
         "options": {
@@ -194,13 +201,13 @@
           {
             "colorOn": "a",
             "hidden": false,
-            "pattern": "9cHFc5Lmw2Qs3Sorvx_S-52",
+            "pattern": "TxjzhaCzm2o5YE0xTeu6-104",
             "style": "fillColor"
           },
           {
             "colorOn": "n",
             "hidden": false,
-            "pattern": "21",
+            "pattern": "42",
             "style": "fillColor"
           }
         ],
@@ -214,7 +221,7 @@
         "dataList": [
           {
             "hidden": false,
-            "pattern": "21",
+            "pattern": "42",
             "textOn": "wmd",
             "textPattern": "/received/",
             "textReplace": "pattern"
@@ -236,9 +243,9 @@
         "level": 0
       }
     ],
-    "order": 3,
+    "order": 85,
     "overlayIcon": false,
-    "pattern": "114.120.211.227 sr-sorong.2-new: Cisco ASAv: Bundle-Ether5 Percentage out",
+    "pattern": "221.132.196.60 ran-agg-gombel.4: Cisco ASAv: Bundle-Ether10 Percentage out",
     "rangeData": [],
     "reduce": true,
     "refId": "A",
@@ -265,7 +272,7 @@
     ],
     "tooltip": true,
     "tooltipColors": false,
-    "tooltipIframe": "<iframe src=\"https://10.54.68.73/d-solo/GqiSMDA4k/ran-pag-gplyen-1-lan_ran_ran-pag-gplyen-1_ran-pag-gplyen-2_po1_po1_2_fots_collo_direct_tsel_po1_l3-po1?orgId=1&panelId=2\" width=\"600\" height=\"400\" frameborder=\"0\"></iframe>",
+    "tooltipIframe": "<iframe src=\"https://10.54.68.73/d-solo/mj6GU114z/ran-agg-gombel-4-lan_core_ran-agg-gombel-4_r4-gbl-pe-mobile-2_be10_be10_500_fots_collo_direct_tsel_be10_l3-bundle-ether10?orgId=1&panelId=1\" width=\"600\" height=\"400\" frameborder=\"0\"></iframe>",
     "tooltipLabel": "",
     "tooltipOn": "a",
     "tooltipOnlyIframe": true,
@@ -281,133 +288,7 @@
   },
   {
     "aggregation": "current",
-    "alias": "sr-sorong.1-new: Bundle-Ether5 Speed",
-    "column": "Time",
-    "dateColumn": "Time",
-    "dateFormat": "YYYY-MM-DD HH:mm:ss",
-    "dateTHData": [
-      {
-        "color": "rgba(245, 54, 54, 0.9)",
-        "comparator": "ge",
-        "level": 0,
-        "value": "0d"
-      },
-      {
-        "color": "rgba(237, 129, 40, 0.89)",
-        "comparator": "ge",
-        "level": 0,
-        "value": "-1d"
-      },
-      {
-        "color": "rgba(50, 172, 45, 0.97)",
-        "comparator": "ge",
-        "level": 0,
-        "value": "-1w"
-      }
-    ],
-    "decimals": 2,
-    "globalThreshold": false,
-    "gradient": false,
-    "hidden": false,
-    "invert": false,
-    "mappingType": 1,
-    "mapsDat": {
-      "events": {
-        "dataList": [],
-        "options": {
-          "enableRegEx": true,
-          "identByProp": "id",
-          "metadata": ""
-        }
-      },
-      "links": {
-        "dataList": [],
-        "options": {
-          "enableRegEx": true,
-          "identByProp": "id",
-          "metadata": ""
-        }
-      },
-      "shapes": {
-        "dataList": [],
-        "options": {
-          "enableRegEx": true,
-          "identByProp": "id",
-          "metadata": ""
-        }
-      },
-      "texts": {
-        "dataList": [
-          {
-            "hidden": false,
-            "pattern": "22",
-            "textOn": "wmd",
-            "textPattern": "/speed/",
-            "textReplace": "pattern"
-          }
-        ],
-        "options": {
-          "enableRegEx": true,
-          "identByProp": "id",
-          "metadata": ""
-        }
-      }
-    },
-    "metricType": "serie",
-    "newRule": false,
-    "numberTHData": [
-      {
-        "color": "rgba(245, 54, 54, 0.9)",
-        "comparator": "ge",
-        "level": 0
-      }
-    ],
-    "order": 4,
-    "overlayIcon": false,
-    "pattern": "114.120.211.216 sr-sorong.1-new: Cisco ASAv: Bundle-Ether5 Link speed",
-    "rangeData": [],
-    "reduce": true,
-    "refId": "A",
-    "sanitize": false,
-    "stringTHData": [
-      {
-        "color": "rgba(245, 54, 54, 0.9)",
-        "comparator": "eq",
-        "level": 0,
-        "value": "/.*/"
-      },
-      {
-        "color": "rgba(237, 129, 40, 0.89)",
-        "comparator": "eq",
-        "level": 0,
-        "value": "/.*warning.*/"
-      },
-      {
-        "color": "rgba(50, 172, 45, 0.97)",
-        "comparator": "eq",
-        "level": 0,
-        "value": "/.*(success|ok).*/"
-      }
-    ],
-    "tooltip": false,
-    "tooltipColors": false,
-    "tooltipIframe": "",
-    "tooltipLabel": "",
-    "tooltipOn": "a",
-    "tooltipOnlyIframe": false,
-    "tpDirection": "v",
-    "tpGraph": false,
-    "tpGraphScale": "linear",
-    "tpGraphSize": "100%",
-    "tpGraphType": "line",
-    "tpMetadata": false,
-    "type": "number",
-    "unit": "decbytes",
-    "valueData": []
-  },
-  {
-    "aggregation": "current",
-    "alias": "sr-sorong.1-new: Bundle-Ether5 Percent",
+    "alias": "ran-agg-gombel.4 Bundle-Ether10 Percent In",
     "column": "Time",
     "dateColumn": "Time",
     "dateFormat": "YYYY-MM-DD HH:mm:ss",
@@ -452,15 +333,15 @@
             "hidden": false,
             "linkOn": "a",
             "linkParams": false,
-            "linkUrl": "https://10.54.68.73/d/GqiSMDA4k/ran-pag-gplyen-1-lan_ran_ran-pag-gplyen-1_ran-pag-gplyen-2_po1_po1_2_fots_collo_direct_tsel_po1_l3-po1?orgId=1",
-            "pattern": "22"
+            "linkUrl": "https://10.54.68.73/d/mj6GU114z/ran-agg-gombel-4-lan_core_ran-agg-gombel-4_r4-gbl-pe-mobile-2_be10_be10_500_fots_collo_direct_tsel_be10_l3-bundle-ether10?orgId=1",
+            "pattern": "45"
           },
           {
             "hidden": false,
             "linkOn": "a",
             "linkParams": false,
-            "linkUrl": "https://10.54.68.73/d/GqiSMDA4k/ran-pag-gplyen-1-lan_ran_ran-pag-gplyen-1_ran-pag-gplyen-2_po1_po1_2_fots_collo_direct_tsel_po1_l3-po1?orgId=1",
-            "pattern": "9cHFc5Lmw2Qs3Sorvx_S-57"
+            "linkUrl": "https://10.54.68.73/d/mj6GU114z/ran-agg-gombel-4-lan_core_ran-agg-gombel-4_r4-gbl-pe-mobile-2_be10_be10_500_fots_collo_direct_tsel_be10_l3-bundle-ether10?orgId=1",
+            "pattern": "TxjzhaCzm2o5YE0xTeu6-106"
           }
         ],
         "options": {
@@ -474,13 +355,13 @@
           {
             "colorOn": "a",
             "hidden": false,
-            "pattern": "9cHFc5Lmw2Qs3Sorvx_S-57",
+            "pattern": "TxjzhaCzm2o5YE0xTeu6-106",
             "style": "fillColor"
           },
           {
             "colorOn": "n",
             "hidden": false,
-            "pattern": "22",
+            "pattern": "45",
             "style": "fillColor"
           }
         ],
@@ -494,7 +375,7 @@
         "dataList": [
           {
             "hidden": false,
-            "pattern": "22",
+            "pattern": "45",
             "textOn": "wmd",
             "textPattern": "/received/",
             "textReplace": "pattern"
@@ -516,9 +397,9 @@
         "level": 0
       }
     ],
-    "order": 5,
+    "order": 86,
     "overlayIcon": false,
-    "pattern": "114.120.211.216 sr-sorong.1-new: Cisco ASAv: Bundle-Ether5 Percentage out",
+    "pattern": "221.132.196.60 ran-agg-gombel.4: Cisco ASAv: Bundle-Ether10 Percentage in",
     "rangeData": [],
     "reduce": true,
     "refId": "A",
@@ -545,7 +426,7 @@
     ],
     "tooltip": true,
     "tooltipColors": false,
-    "tooltipIframe": "<iframe src=\"https://10.54.68.73/d-solo/GqiSMDA4k/ran-pag-gplyen-1-lan_ran_ran-pag-gplyen-1_ran-pag-gplyen-2_po1_po1_2_fots_collo_direct_tsel_po1_l3-po1?orgId=1&panelId=2\" width=\"600\" height=\"400\" frameborder=\"0\"></iframe>",
+    "tooltipIframe": "<iframe src=\"https://10.54.68.73/d-solo/mj6GU114z/ran-agg-gombel-4-lan_core_ran-agg-gombel-4_r4-gbl-pe-mobile-2_be10_be10_500_fots_collo_direct_tsel_be10_l3-bundle-ether10?orgId=1&panelId=1\" width=\"600\" height=\"400\" frameborder=\"0\"></iframe>",
     "tooltipLabel": "",
     "tooltipOn": "a",
     "tooltipOnlyIframe": true,
