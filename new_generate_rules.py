@@ -226,6 +226,7 @@ class Generate_Rules_Grafana(object):
             template_rules_in["alias"] = annotation_data["alias"] + " Percent In"
                 # speed
             template_rules_in["mapsDat"]["texts"]["dataList"][0][
+
                 "pattern"
             ] = annotation_data["label_id_in"]
                 # percent
