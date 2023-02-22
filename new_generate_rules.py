@@ -23,8 +23,8 @@ template_colour_arrow_in = deepcopy(template_colour_arrow)
 class Generate_Rules_Grafana(object):
     def __init__(self):
         # True: there already have global colour, False: there not have any rules
-        self.update_only = True
-        self.put_on_top = False
+        self.update_only = False
+        self.put_on_top = True
         self.update_xml = False
 
         # query init
@@ -39,6 +39,8 @@ class Generate_Rules_Grafana(object):
 
         if not self.update_only:
             self.annotation_date = json.load(open("annotation_date.json"))
+            # Make it clear
+            self.data_json["panels"][0]["rulesData"]["rulesData"] = []
 
     def update_xml_to_panel(self):
         with open(self.path_xml, "r") as read_file_xml:
@@ -227,9 +229,6 @@ class Generate_Rules_Grafana(object):
             template_rules_percent_out["pattern"] = annotation_data["pattern_percentage_out"]
             template_rules_percent_out["tooltipIframe"] = annotation_data["iframe"]
 
-            if template_rules_percent_out == template_rules_percent_in:
-                print(True)
-
             # Percent In
             template_rules_percent_in["alias"] = annotation_data["alias"] + " Percent In"
             template_rules_percent_in["mapsDat"]["texts"]["dataList"][0][
@@ -261,7 +260,7 @@ class Generate_Rules_Grafana(object):
             elif not self.put_on_top and idx == 0:
                 index_rules = total_rules + 1
             else:
-                index_rules += 1
+                index_rules += 2
 
             template_rules_speed["order"] = index_rules
             index_rules += 1
@@ -312,14 +311,13 @@ class Generate_Rules_Grafana(object):
 
         if self.put_on_top:
             for idx in range(
-                len(self.data_json["panels"][0]["rulesData"]["rulesData"])
+                    len(self.data_json["panels"][0]["rulesData"]["rulesData"])
             ):
                 self.data_json["panels"][0]["rulesData"]["rulesData"][idx]["order"] = (
-                    idx + 1
+                        idx + 1
                 )
 
         if not self.update_only:
-            self.data_json["panels"][0]["rulesData"]["rulesData"] = []
             template_rules_update_time["mapsDat"]["texts"]["dataList"][0][
                 "pattern"
             ] = self.annotation_date["lates_data_info"]["rules"]["id_label"]
