@@ -39,6 +39,7 @@ class Generate_Rules_Grafana(object):
 
         if not self.update_only:
             self.annotation_date = json.load(open("annotation_date.json"))
+            # Make it clear
             self.data_json["panels"][0]["rulesData"]["rulesData"] = []
 
     def update_xml_to_panel(self):
