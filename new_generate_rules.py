@@ -67,8 +67,6 @@ class Generate_Rules_Grafana(object):
         write_panel.close()
 
     def generate_query(self):
-        list_query = {}
-
         list_query = {
             val["refId"]: val for val in self.data_json["panels"][0]["targets"]
         }
@@ -357,10 +355,6 @@ class Generate_Rules_Grafana(object):
     def main(self):
         if self.update_xml:
             self.update_xml_to_panel()
-
-        result_rules = []
-        result_colour = []
-        result_query = []
 
         result_query = self.generate_query()
         if not self.update_only:
