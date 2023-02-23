@@ -4,7 +4,7 @@
     "regex_pattern" : "/.*/",
     "rules": {
       "regex_pattern" : "/dateinfo/",
-      "id_label" : "73"
+      "id_label" : "42"
     }
   },
   "lates_edit_name": {
@@ -12,7 +12,7 @@
     "rules":
     {
       "regex_pattern" : "/name/",
-      "id_label" : "70"
+      "id_label" : "41"
     }
   },
   "lates_edit_info": {
@@ -20,7 +20,7 @@
     "rules":
     {
       "regex_pattern" : "/dateinfo/",
-      "id_label" : "70"
+      "id_label" : "41"
     }
   }
 }

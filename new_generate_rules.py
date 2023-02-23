@@ -5,8 +5,7 @@ from copy import deepcopy
 from template import (
     template_colour_arrow,
     template_global_colour,
-    template_rules_speed,
-    template_rules_percent,
+    template_rules,
     template_rules_update_time,
     template_rules_update_name,
     template_query_zabbix,
@@ -15,8 +14,8 @@ from template import (
 )
 
 from pprint import pprint
-template_rules_percent_out = deepcopy(template_rules_percent)
-template_rules_percent_in = deepcopy(template_rules_percent)
+template_rules_out = deepcopy(template_rules)
+template_rules_in = deepcopy(template_rules)
 template_colour_arrow_out = deepcopy(template_colour_arrow)
 template_colour_arrow_in = deepcopy(template_colour_arrow)
 
@@ -24,7 +23,7 @@ class Generate_Rules_Grafana(object):
     def __init__(self):
         # True: there already have global colour, False: there not have any rules
         self.update_only = False
-        self.put_on_top = True
+        self.put_on_top = False
         self.update_xml = False
 
         # query init
@@ -75,7 +74,7 @@ class Generate_Rules_Grafana(object):
         }
 
         for annotation in self.list_annotation_data:
-            host_info = annotation["pattern_percentage_out"].split(": ")[0]
+            host_info = annotation["pattern_percentage_out"].split(": ")[0].replace("/", "")
 
             if annotation.get("item_tag_filter", "") == "":
                 if "description" in annotation["item_tag_filter"]:
@@ -193,67 +192,69 @@ class Generate_Rules_Grafana(object):
                 )
 
             # rules
-            # Speed
-            template_rules_speed["alias"] = annotation_data["alias"] + " Speed"
-            template_rules_speed["mapsDat"]["texts"]["dataList"][0][
+            # Out
+            template_rules_out["alias"] = annotation_data["alias"] + " Percent Out"
+                # speed
+            template_rules_out["mapsDat"]["texts"]["dataList"][0][
                 "pattern"
             ] = annotation_data["label_id_out"]
-            template_rules_speed["mapsDat"]["texts"]["dataList"][1][
+                # percent
+            template_rules_out["mapsDat"]["texts"]["dataList"][1][
                 "pattern"
-            ] = annotation_data["label_id_in"]
-            template_rules_speed["pattern"] = annotation_data["pattern_speed"]
+            ] = annotation_data["label_id_out"]
 
-            # Percent Out
-            template_rules_percent_out["alias"] = annotation_data["alias"] + " Percent Out"
-            template_rules_percent_out["mapsDat"]["texts"]["dataList"][0][
+            template_rules_out["mapsDat"]["links"]["dataList"][0][
                 "pattern"
             ] = annotation_data["label_id_out"]
-            template_rules_percent_out["mapsDat"]["links"]["dataList"][0][
-                "pattern"
-            ] = annotation_data["label_id_out"]
-            template_rules_percent_out["mapsDat"]["links"]["dataList"][1][
+            template_rules_out["mapsDat"]["links"]["dataList"][1][
                 "pattern"
             ] = annotation_data["arrow_id_out"]
-            template_rules_percent_out["mapsDat"]["links"]["dataList"][0][
+            template_rules_out["mapsDat"]["links"]["dataList"][0][
                 "linkUrl"
             ] = annotation_data["link_url"]
-            template_rules_percent_out["mapsDat"]["links"]["dataList"][1][
+            template_rules_out["mapsDat"]["links"]["dataList"][1][
                 "linkUrl"
             ] = annotation_data["link_url"]
-            template_rules_percent_out["mapsDat"]["shapes"]["dataList"][0][
+            template_rules_out["mapsDat"]["shapes"]["dataList"][0][
                 "pattern"
             ] = annotation_data["arrow_id_out"]
-            template_rules_percent_out["mapsDat"]["shapes"]["dataList"][1][
+            template_rules_out["mapsDat"]["shapes"]["dataList"][1][
                 "pattern"
             ] = annotation_data["label_id_out"]
-            template_rules_percent_out["pattern"] = annotation_data["pattern_percentage_out"]
-            template_rules_percent_out["tooltipIframe"] = annotation_data["iframe"]
+            template_rules_out["pattern"] = annotation_data["pattern_percentage_out"]
+            template_rules_out["tooltipIframe"] = annotation_data["iframe"]
 
-            # Percent In
-            template_rules_percent_in["alias"] = annotation_data["alias"] + " Percent In"
-            template_rules_percent_in["mapsDat"]["texts"]["dataList"][0][
+            # In
+            template_rules_in["alias"] = annotation_data["alias"] + " Percent In"
+                # speed
+            template_rules_in["mapsDat"]["texts"]["dataList"][0][
                 "pattern"
             ] = annotation_data["label_id_in"]
-            template_rules_percent_in["mapsDat"]["links"]["dataList"][0][
+                # percent
+            template_rules_in["mapsDat"]["texts"]["dataList"][1][
                 "pattern"
             ] = annotation_data["label_id_in"]
-            template_rules_percent_in["mapsDat"]["links"]["dataList"][1][
+
+            template_rules_in["mapsDat"]["links"]["dataList"][0][
+                "pattern"
+            ] = annotation_data["label_id_in"]
+            template_rules_in["mapsDat"]["links"]["dataList"][1][
                 "pattern"
             ] = annotation_data["arrow_id_in"]
-            template_rules_percent_in["mapsDat"]["links"]["dataList"][0][
+            template_rules_in["mapsDat"]["links"]["dataList"][0][
                 "linkUrl"
             ] = annotation_data["link_url"]
-            template_rules_percent_in["mapsDat"]["links"]["dataList"][1][
+            template_rules_in["mapsDat"]["links"]["dataList"][1][
                 "linkUrl"
             ] = annotation_data["link_url"]
-            template_rules_percent_in["mapsDat"]["shapes"]["dataList"][0][
+            template_rules_in["mapsDat"]["shapes"]["dataList"][0][
                 "pattern"
             ] = annotation_data["arrow_id_in"]
-            template_rules_percent_in["mapsDat"]["shapes"]["dataList"][1][
+            template_rules_in["mapsDat"]["shapes"]["dataList"][1][
                 "pattern"
             ] = annotation_data["label_id_in"]
-            template_rules_percent_in["pattern"] = annotation_data["pattern_percentage_in"]
-            template_rules_percent_in["tooltipIframe"] = annotation_data["iframe"]
+            template_rules_in["pattern"] = annotation_data["pattern_percentage_in"]
+            template_rules_in["tooltipIframe"] = annotation_data["iframe"]
 
             if self.put_on_top and idx == 0:
                 index_rules = 2
@@ -262,18 +263,16 @@ class Generate_Rules_Grafana(object):
             else:
                 index_rules += 2
 
-            template_rules_speed["order"] = index_rules
             index_rules += 1
-            template_rules_percent_out["order"] = index_rules
-            template_rules_percent_in["order"] = index_rules + 1
+            template_rules_out["order"] = index_rules
+            template_rules_in["order"] = index_rules + 1
 
             # colour
             template_colour_arrow_out["pattern"] = annotation_data["arrow_id_out"]
             template_colour_arrow_in["pattern"] = annotation_data["arrow_id_in"]
 
-            result_rules.append(deepcopy(template_rules_speed))
-            result_rules.append(deepcopy(template_rules_percent_out))
-            result_rules.append(deepcopy(template_rules_percent_in))
+            result_rules.append(deepcopy(template_rules_out))
+            result_rules.append(deepcopy(template_rules_in))
             result_colour.append(deepcopy(template_colour_arrow_out))
             result_colour.append(deepcopy(template_colour_arrow_in))
 
@@ -283,23 +282,17 @@ class Generate_Rules_Grafana(object):
 
             if self.put_on_top:
                 self.data_json["panels"][0]["rulesData"]["rulesData"].insert(
-                    index_rules - 2, deepcopy(template_rules_speed)
+                    index_rules - 2, deepcopy(template_rules_out)
                 )
                 self.data_json["panels"][0]["rulesData"]["rulesData"].insert(
-                    index_rules - 2, deepcopy(template_rules_percent_out)
-                )
-                self.data_json["panels"][0]["rulesData"]["rulesData"].insert(
-                    index_rules - 2, deepcopy(template_rules_percent_in)
+                    index_rules - 2, deepcopy(template_rules_in)
                 )
             else:
                 self.data_json["panels"][0]["rulesData"]["rulesData"].append(
-                    deepcopy(template_rules_speed)
+                    deepcopy(template_rules_out)
                 )
                 self.data_json["panels"][0]["rulesData"]["rulesData"].append(
-                    deepcopy(template_rules_percent_out)
-                )
-                self.data_json["panels"][0]["rulesData"]["rulesData"].append(
-                    deepcopy(template_rules_percent_in)
+                    deepcopy(template_rules_in)
                 )
 
             self.data_json["panels"][0]["rulesData"]["rulesData"][0]["mapsDat"][
@@ -347,6 +340,8 @@ class Generate_Rules_Grafana(object):
             template_rules_update_name[1]["pattern"] = self.annotation_date["lates_edit_name"][
                 "regex_pattern"
             ]
+
+            self.data_json["time"]["from"] = "now-1h"
 
             result_rules.append(deepcopy(template_rules_update_time))
             result_rules.extend(deepcopy(template_rules_update_name))

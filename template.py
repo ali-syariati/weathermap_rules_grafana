@@ -115,121 +115,7 @@ template_global_colour = {
     "valueData": [],
 }
 
-template_rules_speed = {
-    "aggregation": "current",
-    "alias": "ran-pag-pklgan.5: Te0/3/0 speed",
-    "column": "Time",
-    "dateColumn": "Time",
-    "dateFormat": "YYYY-MM-DD HH:mm:ss",
-    "dateTHData": [
-        {
-            "color": "rgba(245, 54, 54, 0.9)",
-            "comparator": "ge",
-            "level": 0,
-            "value": "0d",
-        },
-        {
-            "color": "rgba(237, 129, 40, 0.89)",
-            "comparator": "ge",
-            "level": 0,
-            "value": "-1d",
-        },
-        {
-            "color": "rgba(50, 172, 45, 0.97)",
-            "comparator": "ge",
-            "level": 0,
-            "value": "-1w",
-        },
-    ],
-    "decimals": 2,
-    "globalThreshold": False,
-    "gradient": False,
-    "hidden": False,
-    "invert": False,
-    "mappingType": 1,
-    "mapsDat": {
-        "events": {
-            "dataList": [],
-            "options": {"enableRegEx": True, "identByProp": "id", "metadata": ""},
-        },
-        "links": {
-            "dataList": [],
-            "options": {"enableRegEx": True, "identByProp": "id", "metadata": ""},
-        },
-        "shapes": {
-            "dataList": [],
-            "options": {"enableRegEx": True, "identByProp": "id", "metadata": ""},
-        },
-        "texts": {
-            "dataList": [
-                {
-                    "hidden": False,
-                    "pattern": "qepA3EpPfLnxbVJNl7Fr-516",
-                    "textOn": "wmd",
-                    "textPattern": "/speed/",
-                    "textReplace": "pattern",
-                },
-                {
-                    "hidden": False,
-                    "pattern": "qepA3EpPfLnxbVJNl7Fr-516",
-                    "textOn": "wmd",
-                    "textPattern": "/speed/",
-                    "textReplace": "pattern",
-                },
-            ],
-            "options": {"enableRegEx": True, "identByProp": "id", "metadata": ""},
-        },
-    },
-    "metricType": "serie",
-    "newRule": False,
-    "numberTHData": [
-        {"color": "rgba(245, 54, 54, 0.9)", "comparator": "ge", "level": 0}
-    ],
-    "order": 2,
-    "overlayIcon": False,
-    "pattern": "221.132.196.62 ran-pag-pklgan.5: Cisco ASAv: Te0/3/0 Link speed",
-    "rangeData": [],
-    "reduce": True,
-    "refId": "A",
-    "sanitize": False,
-    "stringTHData": [
-        {
-            "color": "rgba(245, 54, 54, 0.9)",
-            "comparator": "eq",
-            "level": 0,
-            "value": "/.*/",
-        },
-        {
-            "color": "rgba(237, 129, 40, 0.89)",
-            "comparator": "eq",
-            "level": 0,
-            "value": "/.*warning.*/",
-        },
-        {
-            "color": "rgba(50, 172, 45, 0.97)",
-            "comparator": "eq",
-            "level": 0,
-            "value": "/.*(success|ok).*/",
-        },
-    ],
-    "tooltip": False,
-    "tooltipColors": False,
-    "tooltipIframe": "",
-    "tooltipLabel": "",
-    "tooltipOn": "a",
-    "tooltipOnlyIframe": False,
-    "tpDirection": "v",
-    "tpGraph": False,
-    "tpGraphScale": "linear",
-    "tpGraphSize": "100%",
-    "tpGraphType": "line",
-    "tpMetadata": False,
-    "type": "number",
-    "unit": "decbytes",
-    "valueData": [],
-}
-
-template_rules_percent = {
+template_rules = {
     "aggregation": "current",
     "alias": "ran-pag-pklgan.5 Te0/3/0 Percent",
     "column": "Time",
@@ -305,11 +191,20 @@ template_rules_percent = {
         "texts": {
             "dataList": [
                 {
-                    "hidden": False,
-                    "pattern": "qepA3EpPfLnxbVJNl7Fr-516",
-                    "textOn": "wmd",
-                    "textPattern": "/received/",
-                    "textReplace": "pattern",
+                "hidden": False,
+                "pattern": "4",
+                "textCustom": "decbytes",
+                "textOn": "wmd",
+                "textPattern": "/speed/",
+                "textReplace": "pattern"
+                },
+                {
+                "hidden": False,
+                "pattern": "4",
+                "textCustom": "percent",
+                "textOn": "wmd",
+                "textPattern": "/received/",
+                "textReplace": "pattern"
                 }
             ],
             "options": {"enableRegEx": True, "identByProp": "id", "metadata": ""},
@@ -320,7 +215,7 @@ template_rules_percent = {
     "numberTHData": [{"color": "#00000000", "comparator": "ge", "level": 0}],
     "order": 3,
     "overlayIcon": False,
-    "pattern": "221.132.196.62 ran-pag-pklgan.5: Cisco ASAv: Te0/3/0 Percentage " "out",
+    "pattern": "/221.132.196.91 ran-pag-jtsrono.1: Cisco ASAv: Gi0/3/4(.*speed|.*Percentage out)/",
     "rangeData": [],
     "reduce": True,
     "refId": "A",
