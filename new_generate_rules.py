@@ -31,13 +31,16 @@ class Generate_Rules_Grafana(object):
         self.datasource_uid_zabbix_collector = "gHQN77VVz"
         self.datasource_uid_grafana = "P4eTw6hVz"
 
+        # self.datasource_uid_zabbix_collector = "tAfN0kbVz"
+        # self.datasource_uid_grafana = "a3cAAzx4z"
+
         self.path_xml = "clean_panel_xml.xml"
 
         self.data_json = json.load(open("panel.json"))
-        self.list_annotation_data = json.load(open("annotation.json"))
+        self.list_annotation_data = json.load(open("annotation/annotation.json"))
 
         if not self.update_only:
-            self.annotation_date = json.load(open("annotation_date.json"))
+            self.annotation_date = json.load(open("annotation/annotation_date.json"))
             # Make it clear
             self.data_json["panels"][0]["rulesData"]["rulesData"] = []
 
