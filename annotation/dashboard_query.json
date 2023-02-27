@@ -1,0 +1,109 @@
+[
+  {
+    "folder_name": "JATENG Dashboard - RAN ACCESS CEPER"
+  },
+  {
+    "datasource_type": "alexanderzobnin-zabbix-datasource",
+    "datasource_uid_1": "gHQN77VVz",
+    "datasource_uid_2": "4YsZQV44z",
+    "timezone": "Asia/Jakarta",
+    "title": "ran-pag-jkenan.1 - wan_backhaul_ran-pag-jkenan.1_me-d4-jwn_gi0/1/1_gix/x/x_1_fots_metro_zte_telkom_live_fiber_STO-Juwan - Gi0/1/1",
+    "group_filter": "Jateng/Cisco",
+    "host_filter": "221.132.196.81 ran-pag-jkenan.1",
+    "item_tag_filter": "description: wan_backhaul_ran-pag-jkenan.1_me-d4-jwn_gi0/1/1_gix/x/x_1_fots_metro_zte_telkom_live_fiber_STO-Juwana",
+    "item_filter_outbound": "Cisco ASAv: Gi0/1/1 Outgoing traffic",
+    "item_filter_inbound": "Cisco ASAv: Gi0/1/1 Incoming traffic",
+    "link": "https://10.54.68.73/d/2WgFSKx4k/ran-pag-jkenan-1-wan_backhaul_ran-pag-jkenan-1_me-d4-jwn_gi0-1-1_gix-x-x_1_fots_metro_zte_telkom_live_fiber_sto-juwan-gi0-1-1?orgId=1"
+  },
+  {
+    "datasource_type": "alexanderzobnin-zabbix-datasource",
+    "datasource_uid_1": "gHQN77VVz",
+    "datasource_uid_2": "4YsZQV44z",
+    "timezone": "Asia/Jakarta",
+    "title": "ran-pag-jkenan.2 - wan_backhaul_ran-pag-jkenan.2_me-d4-rbg_gi0/1/1_gi2/0/6_1_fots_metro_zte_telkom_fiber_po5_sto-remban - Gi0/1/1",
+    "group_filter": "Jateng/Cisco",
+    "host_filter": "221.132.196.82 ran-pag-jkenan.2",
+    "item_tag_filter": "interface: Gi0/1/1",
+    "item_filter_outbound": "Cisco ASAv: Gi0/1/1 Outgoing traffic",
+    "item_filter_inbound": "Cisco ASAv: Gi0/1/1 Incoming traffic",
+    "link": "https://10.54.68.73/d/FBhFIKx4k/ran-pag-jkenan-2-wan_backhaul_ran-pag-jkenan-2_me-d4-rbg_gi0-1-1_gi2-0-6_1_fots_metro_zte_telkom_fiber_po5_sto-remban-gi0-1-1?orgId=1"
+  },
+  {
+    "datasource_type": "alexanderzobnin-zabbix-datasource",
+    "datasource_uid_1": "gHQN77VVz",
+    "datasource_uid_2": "4YsZQV44z",
+    "timezone": "Asia/Jakarta",
+    "title": "ran-pag-jkenan.1 - Abis_BSC_Jakenan_Gouc_0-16-0 - Gi0/1/0",
+    "group_filter": "Jateng/Cisco",
+    "host_filter": "221.132.196.81 ran-pag-jkenan.1",
+    "item_tag_filter": "interface: Gi0/1/0",
+    "item_filter_outbound": "Cisco ASAv: Gi0/1/0 Outgoing traffic",
+    "item_filter_inbound": "Cisco ASAv: Gi0/1/0 Incoming traffic",
+    "link": "https://10.54.68.73/d/jH_KSKxVz/ran-pag-jkenan-1-abis_bsc_jakenan_gouc_0-16-0-gi0-1-0?orgId=1"
+  },
+  {
+    "datasource_type": "alexanderzobnin-zabbix-datasource",
+    "datasource_uid_1": "gHQN77VVz",
+    "datasource_uid_2": "4YsZQV44z",
+    "timezone": "Asia/Jakarta",
+    "title": "ran-pag-jkenan.1 - lan_backhaul_ran-pag-jkenan.1_osn_gi0/4/0_-_1_fots_collo_direct_tsel_live_fiber - Gi0/4/0",
+    "group_filter": "Jateng/Cisco",
+    "host_filter": "221.132.196.81 ran-pag-jkenan.1",
+    "item_tag_filter": "description: lan_backhaul_ran-pag-jkenan.1_osn_gi0/4/0_-_1_fots_collo_direct_tsel_live_fiber",
+    "item_filter_outbound": "Cisco ASAv: Gi0/4/0 Outgoing traffic",
+    "item_filter_inbound": "Cisco ASAv: Gi0/4/0 Incoming traffic",
+    "link": "https://10.54.68.73/d/NwicIKbVz/ran-pag-jkenan-1-lan_backhaul_ran-pag-jkenan-1_osn_gi0-4-0_-_1_fots_collo_direct_tsel_live_fiber-gi0-4-0?orgId=1"
+  },
+  {
+    "datasource_type": "alexanderzobnin-zabbix-datasource",
+    "datasource_uid_1": "gHQN77VVz",
+    "datasource_uid_2": "4YsZQV44z",
+    "timezone": "Asia/Jakarta",
+    "title": "ran-pag-jkenan.2 - Abis_BSC_Jakenan_Gouc_0-17-0 - Gi0/1/0",
+    "group_filter": "Jateng/Cisco",
+    "host_filter": "221.132.196.82 ran-pag-jkenan.2",
+    "item_tag_filter": "interface: Gi0/1/0",
+    "item_filter_outbound": "Cisco ASAv: Gi0/1/0 Outgoing traffic",
+    "item_filter_inbound": "Cisco ASAv: Gi0/1/0 Incoming traffic",
+    "link": "https://10.54.68.73/d/5fhcSKbVk/ran-pag-jkenan-2-abis_bsc_jakenan_gouc_0-17-0-gi0-1-0?orgId=1"
+  },
+  {
+    "datasource_type": "alexanderzobnin-zabbix-datasource",
+    "datasource_uid_1": "gHQN77VVz",
+    "datasource_uid_2": "4YsZQV44z",
+    "timezone": "Asia/Jakarta",
+    "title": "ran-pag-jkenan.2 - wan_ran_ran-pag-jkenan.2_ran-agg-nusukan.3_gi0/1/7_gi0/2/0/36_1_fots_ptn_huawei_tsel_fiber_l3_osn583 - Gi0/1/7",
+    "group_filter": "Jateng/Cisco",
+    "host_filter": "221.132.196.82 ran-pag-jkenan.2",
+    "item_tag_filter": "interface: Gi0/1/7",
+    "item_filter_outbound": "Cisco ASAv: Gi0/1/7 Outgoing traffic",
+    "item_filter_inbound": "Cisco ASAv: Gi0/1/7 Incoming traffic",
+    "link": "https://10.54.68.73/d/VDs5IFb4z/ran-pag-jkenan-2-wan_ran_ran-pag-jkenan-2_ran-agg-nusukan-3_gi0-1-7_gi0-2-0-36_1_fots_ptn_huawei_tsel_fiber_l3_osn583-gi0-1-7?orgId=1"
+  },
+  {
+    "datasource_type": "alexanderzobnin-zabbix-datasource",
+    "datasource_uid_1": "gHQN77VVz",
+    "datasource_uid_2": "4YsZQV44z",
+    "timezone": "Asia/Jakarta",
+    "title": "ran-pag-jkenan.1 - lan_ran_ran-pag-jkenan.1_ran-pag-jkenan.2_po1_po1_2_fots_collo_direct_tsel_po1_l3 - Po1",
+    "group_filter": "Jateng/Cisco",
+    "host_filter": "221.132.196.81 ran-pag-jkenan.1",
+    "item_tag_filter": "interface: Po1",
+    "item_filter_outbound": "Cisco ASAv: Po1 Outgoing traffic",
+    "item_filter_inbound": "Cisco ASAv: Po1 Incoming traffic",
+    "link": "https://10.54.68.73/d/WYmpSKb4z/ran-pag-jkenan-1-lan_ran_ran-pag-jkenan-1_ran-pag-jkenan-2_po1_po1_2_fots_collo_direct_tsel_po1_l3-po1?orgId=1"
+  },
+  {
+    "datasource_type": "alexanderzobnin-zabbix-datasource",
+    "datasource_uid_1": "gHQN77VVz",
+    "datasource_uid_2": "4YsZQV44z",
+    "timezone": "Asia/Jakarta",
+    "title": "ran-pag-jkenan.1 - wan_ran_ran-pag-jkenan.1_ran-agg-gombel.3_gi0/1/7_gi0/2/0/36_1_fots_ptn_huawei_tsel_live_fiber - Gi0/1/7",
+    "group_filter": "Jateng/Cisco",
+    "host_filter": "221.132.196.81 ran-pag-jkenan.1",
+    "item_tag_filter": "description: wan_ran_ran-pag-jkenan.1_ran-agg-gombel.3_gi0/1/7_gi0/2/0/36_1_fots_ptn_huawei_tsel_live_fiber",
+    "item_filter_outbound": "Cisco ASAv: Gi0/1/7 Outgoing traffic",
+    "item_filter_inbound": "Cisco ASAv: Gi0/1/7 Incoming traffic",
+    "link": "https://10.54.68.73/d/Tx2tIKx4z/ran-pag-jkenan-1-wan_ran_ran-pag-jkenan-1_ran-agg-gombel-3_gi0-1-7_gi0-2-0-36_1_fots_ptn_huawei_tsel_live_fiber-gi0-1-7?orgId=1"
+  }
+]

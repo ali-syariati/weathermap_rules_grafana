@@ -1,0 +1,12 @@
+{
+  "datasource_type": "alexanderzobnin-zabbix-datasource",
+  "datasource_uid_1": "gHQN77VVz",
+  "datasource_uid_2": "4YsZQV44z",
+  "timezone": "Asia/Jakarta",
+  "title": "ran-pag-newarm.2 - wan_ran_ran-pag-newarm.2_ran-agg-nusukan.4_gi0/2/7_gi0/2/0/14_1_fots_ptn_huawei_tsel_fiber_l3_osn586 - Gi0/2/7",
+  "group_filter": "Jateng/Cisco",
+  "host_filter": "221.132.196.74 ran-pag-newarm.2",
+  "item_filter_outbound": "Cisco ASAv: Gi0/2/7 Outgoing traffic",
+  "item_filter_inbound": "Cisco ASAv: Gi0/2/7 Incoming traffic",
+  "item_tag_filter": "description: wan_ran_ran-pag-newarm.2_ran-agg-nusukan.4_gi0/2/7_gi0/2/0/14_1_fots_ptn_huawei_tsel_fiber_l3_osn5866_6-em20-10"
+}
