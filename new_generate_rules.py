@@ -31,13 +31,16 @@ class Generate_Rules_Grafana(object):
         self.datasource_uid_zabbix_collector = "gHQN77VVz"
         self.datasource_uid_grafana = "P4eTw6hVz"
 
+        # self.datasource_uid_zabbix_collector = "tAfN0kbVz"
+        # self.datasource_uid_grafana = "a3cAAzx4z"
+
         self.path_xml = "clean_panel_xml.xml"
 
         self.data_json = json.load(open("panel.json"))
-        self.list_annotation_data = json.load(open("annotation.json"))
+        self.list_annotation_data = json.load(open("annotation/annotation.json"))
 
         if not self.update_only:
-            self.annotation_date = json.load(open("annotation_date.json"))
+            self.annotation_date = json.load(open("annotation/annotation_date.json"))
             # Make it clear
             self.data_json["panels"][0]["rulesData"]["rulesData"] = []
 
@@ -67,6 +70,8 @@ class Generate_Rules_Grafana(object):
         write_panel.close()
 
     def generate_query(self):
+        list_query = {}
+
         list_query = {
             val["refId"]: val for val in self.data_json["panels"][0]["targets"]
         }
@@ -226,7 +231,6 @@ class Generate_Rules_Grafana(object):
             template_rules_in["alias"] = annotation_data["alias"] + " Percent In"
                 # speed
             template_rules_in["mapsDat"]["texts"]["dataList"][0][
-
                 "pattern"
             ] = annotation_data["label_id_in"]
                 # percent
@@ -356,6 +360,10 @@ class Generate_Rules_Grafana(object):
     def main(self):
         if self.update_xml:
             self.update_xml_to_panel()
+
+        result_rules = []
+        result_colour = []
+        result_query = []
 
         result_query = self.generate_query()
         if not self.update_only:

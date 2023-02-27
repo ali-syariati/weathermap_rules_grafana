@@ -688,3 +688,250 @@ template_handle_bug =         {
             "minSeverity": 3
           }
         }
+
+template_dashboard_panel = {
+        "datasource": {
+            "type": "",
+            "uid": ""
+        },
+        "fieldConfig": {
+            "defaults": {
+                "color": {
+                    "mode": "palette-classic"
+                },
+                "custom": {
+                    "axisLabel": "",
+                    "axisPlacement": "auto",
+                    "barAlignment": 0,
+                    "drawStyle": "line",
+                    "fillOpacity": 9,
+                    "gradientMode": "none",
+                    "hideFrom": {
+                        "legend": False,
+                        "tooltip": False,
+                        "viz": False
+                    },
+                    "lineInterpolation": "linear",
+                    "lineWidth": 1,
+                    "pointSize": 1,
+                    "scaleDistribution": {
+                        "type": "linear"
+                    },
+                    "showPoints": "auto",
+                    "spanNulls": False,
+                    "stacking": {
+                        "group": "A",
+                        "mode": "none"
+                    },
+                    "thresholdsStyle": {
+                        "mode": "off"
+                    }
+                },
+                "mappings": [],
+                "min": 0,
+                "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                        {
+                            "color": "green",
+                            "value": None
+                        }
+                    ]
+                },
+                "unit": "deckbytes"
+            },
+            "overrides": [
+                {
+                    "matcher": {
+                        "id": "byName",
+                        "options": "Outbound"
+                    },
+                    "properties": [
+                        {
+                            "id": "color",
+                            "value": {
+                                "fixedColor": "dark-blue",
+                                "mode": "fixed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "matcher": {
+                        "id": "byName",
+                        "options": "Inbound"
+                    },
+                    "properties": [
+                        {
+                            "id": "color",
+                            "value": {
+                                "fixedColor": "dark-green",
+                                "mode": "fixed"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "gridPos": {
+            "h": "",
+            "w": "",
+            "x": "",
+            "y": ""
+        },
+        "id": None,
+        "interval": "",
+        "options": {
+            "legend": {
+                "calcs": [
+                    "lastNotNull",
+                    "mean",
+                    "max"
+                ],
+                "displayMode": "table",
+                "placement": "bottom"
+            },
+            "tooltip": {
+                "mode": "single",
+                "sort": "none"
+            }
+        },
+        "targets": [
+            {
+                "application": {
+                    "filter": ""
+                },
+                "datasource": {
+                    "type": "",
+                    "uid": ""
+                },
+                "functions": [
+                    {
+                        "def": {
+                            "category": "Alias",
+                            "defaultParams": [],
+                            "name": "setAlias",
+                            "params": [
+                                {
+                                    "name": "alias",
+                                    "type": "string"
+                                }
+                            ]
+                        },
+                        "params": [
+                            "Outbound"
+                        ],
+                        "text": "setAlias(Outbound)"
+                    }
+                ],
+                "group": {
+                    "filter": ""
+                },
+                "host": {
+                    "filter": ""
+                },
+                "item": {
+                    "filter": ""
+                },
+                "itemTag": {
+                    "filter": ""
+                },
+                "options": {
+                    "disableDataAlignment": False,
+                    "showDisabledItems": False,
+                    "skipEmptyValues": False,
+                    "useZabbixValueMapping": False
+                },
+                "proxy": {
+                    "filter": ""
+                },
+                "queryType": "0",
+                "refId": "Outbound",
+                "resultFormat": "time_series",
+                "table": {
+                    "skipEmptyValues": False
+                },
+                "tags": {
+                    "filter": ""
+                },
+                "trigger": {
+                    "filter": ""
+                },
+                "triggers": {
+                    "acknowledged": 2,
+                    "count": True,
+                    "minSeverity": 3
+                }
+            },
+            {
+                "application": {
+                    "filter": ""
+                },
+                "datasource": {
+                    "type": "",
+                    "uid": ""
+                },
+                "functions": [
+                    {
+                        "def": {
+                            "category": "Alias",
+                            "defaultParams": [],
+                            "name": "setAlias",
+                            "params": [
+                                {
+                                    "name": "alias",
+                                    "type": "string"
+                                }
+                            ]
+                        },
+                        "params": [
+                            "Inbound"
+                        ],
+                        "text": "setAlias(Inbound)"
+                    }
+                ],
+                "group": {
+                    "filter": ""
+                },
+                "hide": False,
+                "host": {
+                    "filter": ""
+                },
+                "item": {
+                    "filter": ""
+                },
+                "itemTag": {
+                    "filter": ""
+                },
+                "options": {
+                    "disableDataAlignment": False,
+                    "showDisabledItems": False,
+                    "skipEmptyValues": False,
+                    "useZabbixValueMapping": False
+                },
+                "proxy": {
+                    "filter": ""
+                },
+                "queryType": "0",
+                "refId": "Inbound",
+                "resultFormat": "time_series",
+                "table": {
+                    "skipEmptyValues": False
+                },
+                "tags": {
+                    "filter": ""
+                },
+                "trigger": {
+                    "filter": ""
+                },
+                "triggers": {
+                    "acknowledged": 2,
+                    "count": True,
+                    "minSeverity": 3
+                }
+            }
+        ],
+        "timeFrom": "",
+        "title": "",
+        "type": "timeseries"
+}
